@@ -25,7 +25,7 @@
 .host-img {
     width: 300px;
     height: 300px;
-    background: url(images/avatar.jpg);
+    background: url(../images/avatar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -93,23 +93,4 @@
         height: 40%;
         padding: 20px;
     }
-}
-
-/* Super Large devices (750px to 849px) */
-@media only screen and (min-width: 750px) and (max-width: 849px) {}
-
-/* Ultra Large devices (850px to 991px) */
-@media only screen and (min-width: 850px) and (max-width: 991px) {}
-
-/* Massive devices (992px to 1199px) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
-
-/* Colossal devices (1200px to 1399px) */
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    /* Styles for colossal devices */
-}
-
-/* Enormous devices (1400px and above) */
-@media only screen and (min-width: 1400px) {
-    /* Styles for enormous devices */
 }
