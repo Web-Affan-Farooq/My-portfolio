@@ -28,7 +28,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--primary-font);
-    background: url(images/Desktop-5.png);
+    background: url(../images/desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
