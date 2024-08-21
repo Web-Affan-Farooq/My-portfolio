@@ -29,7 +29,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--primary-font);
-    background-image: url(images/desktop.png);
+    background-image: url(../images/desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,7 +43,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background-image: url(images/desktop.png);
+    background-image: url(../images/desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -87,7 +87,7 @@ section {
 
 @media (min-width:0px) and (max-width:700px) {
     body,.container {
-        background: url(images/mobile.png);
+        background: url(../images/mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
