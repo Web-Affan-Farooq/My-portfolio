@@ -19,7 +19,7 @@
     height: 250px;
     border: 3px solid var(--link-color);
     border-radius: 10px;
-    background: url(images/code-editor.png);
+    background: url(../images/code-editor.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +41,7 @@
     height: 250px;
     border: 3px solid var(--link-color);
     border-radius: 10px;
-    background: url(images/todolist.png);
+    background: url(../images/todolist.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +63,7 @@
     height: 250px;
     border: 3px solid var(--link-color);
     border-radius: 10px;
-    background: url(images/portfolio.png);
+    background: url(../images/portfolio.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
