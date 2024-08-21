@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --green-color: #1bbe46;
+    --grey-color: #232526;
+    --grey-light: rgba(255, 255, 255, 0.1);
+    --background: #000;
+    --link-color: #4083c7;
+    --blue-dark: #122130;
+
+    /*___gradients___*/
+
+    --gradient-cold: linear-gradient(120deg, var(--link-color), var(--green-color));
+    --gradient-warm: linear-gradient(120deg, orange, red);
+
+    /*___font families___*/
+
+    --secondary-font: "Oswald", sans-serif;
+    --primary-font: "Poppins", sans-serif;
+    /*___font sizes___*/
+    --font-size-1: 2em;
+    --font-size-2: 3em;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: var(--primary-font);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(/images/Frame-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-behavior: auto;
+}
+
+.projects {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.projects h1 {
+    color: white;
+    font-size: 3em;
+    margin: 80px auto;
+}
+
+.highlight {
+    color: var(--green-color)
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 100px;
+    align-items: center;
+}
+
+.project {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(90px);
+}
+
+.project img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.project-content {
+    color: white;
+    text-align: left;
+    padding: 10px 30px;
+}
+
+
+/*_____Breakpoints____*/
+
+@media (min-width:330px) and (max-width:630px) {
+    .project {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .project img {
+        width: 300px;
+        height: 200px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .project-content {
+        width: auto;
+        height: auto;
+        color: white;
+        text-align: left;
+        margin: auto;
+        padding: 10px 30px;
+    }
+}

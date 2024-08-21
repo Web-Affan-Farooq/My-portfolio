@@ -1,0 +1,37 @@
+.section-5 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    transition: all 1s ease;
+}
+
+.section-5 h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.serve-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.serve-child {
+    width: 320px;
+    height: auto;
+    padding: 20px 30px;
+    margin: auto;
+    border-radius: 30px;
+    color: black;
+    background: rgba(255, 255, 255,0.1);
+    backdrop-filter: blur(90px);
+}
+.serve-child h2 {
+    color: var(--green-color);
+}

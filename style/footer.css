@@ -1,0 +1,100 @@
+.footer {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-top: 1px solid var(--link-color);
+    transition: all 1s ease;
+}
+
+.f-links {
+    float: right;
+    clear: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.f-options {
+    padding: 10px 20px;
+}
+
+.f-options a:hover {
+    color: white;
+    transition: all .4s ease-in-out;
+}
+
+footer p {
+    text-wrap: nowrap;
+    padding: 20px;
+}
+
+
+/*____responsive design____*/
+
+@media only screen and (max-width: 429px) {
+    .footer {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+        border-top:1px solid var(--link-color);
+    }
+
+    .f-links {
+        float: none;
+        clear: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .f-options {
+        padding: 20px 20px;
+        margin: auto;
+    }
+}
+
+/* Medium devices (430px to 539px) */
+@media only screen and (min-width: 430px) and (max-width: 539px) {
+    .footer {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+        border-top:1px solid var(--link-color);
+    }
+
+    .f-links {
+        float: none;
+        clear: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .f-options {
+        padding: 20px 20px;
+        margin: auto;
+    }
+}
+
+/* Large devices (540px to 689px) */
+@media only screen and (min-width: 540px) and (max-width: 689px) {
+    .footer {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+        border-top:1px solid var(--link-color);
+    }
+
+    .f-links {
+        float: none;
+        clear: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .f-options {
+        padding: 20px 20px;
+        margin: auto;
+    }
+}

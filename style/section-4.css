@@ -1,0 +1,490 @@
+.section-4 {
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    padding: 0px 30px;
+    transition:all 1s ease;
+}
+
+.section-4>h1 {
+    color: white;
+    font-size: var(--font-size-2);
+}
+
+.project-card-1 {
+    width: 400px;
+    height: 250px;
+    border: 3px solid var(--link-color);
+    border-radius: 10px;
+    background: url(/images/code-editor.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-cloud-1 {
+    width: 29rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(90px);
+    position: relative;
+    left: 80%;
+    bottom: 50px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.project-card-2 {
+    width: 400px;
+    height: 250px;
+    border: 3px solid var(--link-color);
+    border-radius: 10px;
+    background: url(/images/todolist.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-cloud-2 {
+    width: 29rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(90px);
+    position: relative;
+    left: 80%;
+    bottom: 50px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.project-card-3 {
+    width: 400px;
+    height: 250px;
+    border: 3px solid var(--link-color);
+    border-radius: 10px;
+    background: url(/images/portfolio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-cloud-3 {
+    width: 29rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(90px);
+    position: relative;
+    left: 80%;
+    bottom: 50px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/*____Responsive design ____*/
+
+
+@media only screen and (max-width: 429px) {
+    .project-card-1 {
+        width: 300px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-1 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-1 p {
+        display: none;
+    }
+    .project-card-2 {
+        width: 300px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-2 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-2 p {
+        display: none;
+    }
+    .project-card-3 {
+        width: 300px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-3 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-3 p {
+        display: none;
+    }
+}
+
+/* Medium devices (430px to 539px) */
+@media only screen and (min-width: 430px) and (max-width: 539px) {
+    .project-card-1 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-1 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-1 p {
+        display: none;
+    }
+    .project-card-2 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-2 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-2 p {
+        display: none;
+    }
+    .project-card-3 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-3 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-3 p {
+        display: none;
+    }
+}
+
+/* Large devices (540px to 689px) */
+@media only screen and (min-width: 540px) and (max-width: 689px) {
+    .project-card-1 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-1 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-1 p {
+        display: none;
+    }
+    .project-card-2 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-2 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-2 p {
+        display: none;
+    }
+    .project-card-3 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-3 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-3 p {
+        display: none;
+    }
+}
+
+/* Extra Large devices (690px to 749px) */
+@media only screen and (min-width: 690px) and (max-width: 749px) {
+    .project-card-1 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-1 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-1 p {
+        display: none;
+    }
+    .project-card-2 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-2 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-2 p {
+        display: none;
+    }
+    .project-card-3 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .project-cloud-3 {
+        width:auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        top: 57%;
+        border-radius: 10px;
+        text-align: left;
+        padding: 10px;
+    }
+    .project-cloud-3 p {
+        display: none;
+    }
+}
+
+/* Super Large devices (750px to 849px) */
+@media only screen and (min-width: 750px) and (max-width: 849px) {
+
+    .project-card-1 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+    }
+
+    .project-cloud-1 {
+        width: 20rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 80%;
+        bottom: 50px;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    .project-card-2 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+    }
+
+    .project-cloud-2 {
+        width: 20rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 80%;
+        bottom: 50px;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    .project-card-3 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+    }
+
+    .project-cloud-3 {
+        width: 20rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 80%;
+        bottom: 50px;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+}
+
+/* Ultra Large devices (850px to 991px) */
+@media only screen and (min-width: 850px) and (max-width: 991px) {
+    .project-card-1 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+    }
+
+    .project-cloud-1 {
+        width: 20rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 80%;
+        bottom: 50px;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    .project-card-2 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+    }
+
+    .project-cloud-2 {
+        width: 20rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 80%;
+        bottom: 50px;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    .project-card-3 {
+        width: 350px;
+        height: 200px;
+        border: 3px solid var(--link-color);
+        border-radius: 10px;
+    }
+
+    .project-cloud-3 {
+        width: 20rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(90px);
+        position: relative;
+        left: 80%;
+        bottom: 50px;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+}

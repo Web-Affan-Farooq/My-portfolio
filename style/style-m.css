@@ -1,0 +1,55 @@
+@media only screen and (max-width: 429px) {
+    body {
+        background: purple;
+    }
+}
+
+/* Medium devices (430px to 539px) */
+@media only screen and (min-width: 430px) and (max-width: 539px) {
+    body {
+        background: Yellow;
+    }
+}
+
+/* Large devices (540px to 689px) */
+@media only screen and (min-width: 540px) and (max-width: 689px) {
+    body {
+        background: blue;
+    }
+}
+
+/* Extra Large devices (690px to 749px) */
+@media only screen and (min-width: 690px) and (max-width: 749px) {
+    body {
+        background: red;
+    }
+}
+
+/* Super Large devices (750px to 849px) */
+@media only screen and (min-width: 750px) and (max-width: 849px) {
+    body {
+        background: green;
+     }}
+
+/* Ultra Large devices (850px to 991px) */
+@media only screen and (min-width: 850px) and (max-width: 991px) {
+    body {
+        background: aqua;
+     }}
+
+/* Massive devices (992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for massive devices */ body {
+    background: black;
+}
+}
+
+/* Colossal devices (1200px to 1399px) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    /* Styles for colossal devices */
+}
+
+/* Enormous devices (1400px and above) */
+@media only screen and (min-width: 1400px) {
+    /* Styles for enormous devices */
+}
