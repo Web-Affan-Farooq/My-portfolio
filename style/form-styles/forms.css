@@ -30,10 +30,10 @@ body {
     margin: 0;
     font-family: var(--primary-font);
     scroll-behavior: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/Frame-3.png);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/Frame-3.png);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .container {
