@@ -1,29 +1,29 @@
-setTimeout(() => {
-    document.querySelector(".container").style.display = "none";
-    let popup = document.createElement("div");
-    popup.className = "popup";
-    popup.innerHTML = `<p>Hello user , this website is a static template created by Muhammad Affan. If you want this template to be customized for you , reach out Muhammmad Affan via linked in, source code freely available on github. Click to copy link.
-        Consider to star the repository </p>
-        <p>Build with ♥ by Muhammad affan</p>
-        <p>Want to exit? click on me</p>`;
-    console.log(popup);
-    document.body.appendChild(popup);
-    document.body.style.display = "flex";
-    document.body.style.justifyContent = "center";
-    document.querySelector(".popup").addEventListener('click', function exit() {
-        document.body.removeChild(popup);
-        console.log("notification removed");
-        document.querySelector(".container").style.display = "block";
-        document.body.style.display = "block";
-        window.navigator.clipboard.writeText("hello world");
-    })
-    setTimeout(() => {
-        document.body.removeChild(popup);
-        console.log("notification removed");
-        document.querySelector(".container").style.display = "block";
-        document.body.style.display = "block";
-    }, 20000);
-}, 5000);
+// setTimeout(() => {
+//     document.querySelector(".container").style.display = "none";
+//     let popup = document.createElement("div");
+//     popup.className = "popup";
+//     popup.innerHTML = `<p>Hello user , this website is a static template created by Muhammad Affan. If you want this template to be customized for you , reach out Muhammmad Affan via linked in, source code freely available on github. Click to copy link.
+//         Consider to star the repository </p>
+//         <p>Build with ♥ by Muhammad affan</p>
+//         <p>Want to exit? click on me</p>`;
+//     console.log(popup);
+//     document.body.appendChild(popup);
+//     document.body.style.display = "flex";
+//     document.body.style.justifyContent = "center";
+//     document.querySelector(".popup").addEventListener('click', function exit() {
+//         document.body.removeChild(popup);
+//         console.log("notification removed");
+//         document.querySelector(".container").style.display = "block";
+//         document.body.style.display = "block";
+//         window.navigator.clipboard.writeText("hello world");
+//     })
+//     setTimeout(() => {
+//         document.body.removeChild(popup);
+//         console.log("notification removed");
+//         document.querySelector(".container").style.display = "block";
+//         document.body.style.display = "block";
+//     }, 20000);
+// }, 5000);
 
 
 
