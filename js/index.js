@@ -49,3 +49,4 @@ let sections = [section_5, section_1, section_2, section_3, section_4, section_6
 sections.forEach(section => {
     observer.observe(section);
 });
+
