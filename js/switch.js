@@ -17,11 +17,13 @@ navToogle.addEventListener('click',function showNav() {
     }
 })
 
-let navOptions = document.querySelectorAll(".nav-options");
-navOptions.forEach(option => {
-    option.addEventListener("click", function hideNav(e) {
-        document.querySelector("#menu-icon").innerHTML = `<i class="fa-solid fa-bars"></i>`;
-        document.querySelector(".nav-list").style.display = "none";
-        document.querySelector("header").style.height = "60px";
+if(window.innerWidth <=750) {    
+    let navOptions = document.querySelectorAll(".nav-options");
+    navOptions.forEach(option => {
+        option.addEventListener("click", function hideNav(e) {
+            document.querySelector("#menu-icon").innerHTML = `<i class="fa-solid fa-bars"></i>`;
+            document.querySelector(".nav-list").style.display = "none";
+            document.querySelector("header").style.height = "60px";
+        })
     })
-})
+}
