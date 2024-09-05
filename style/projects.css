@@ -126,7 +126,7 @@
     }
 
     .f-links {
-        width: 260px;
+        width: 280px;
         height: 130px;
         border: 1px solid white;
         border-radius: 20px;
@@ -139,7 +139,6 @@
 }
 @media (max-width:480px) {
     .section-projects {
-        padding: 20px;
         flex-direction: column;
     }
     .content {
@@ -156,7 +155,7 @@
         flex-wrap: wrap;
     }
     .f-links {
-        width: 230px;
+        width: 250px;
         height: 130px;
         border: 1px solid white;
         border-radius: 20px;
@@ -165,4 +164,5 @@
         flex-direction: column;
         gap: 20px;
     }
+
 }
