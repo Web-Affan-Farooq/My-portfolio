@@ -1,0 +1,4 @@
+/* -------- remove x axis scrollbar effect in acheievemnts section*/
+.ach-container::-webkit-scrollbar {
+    display: none; 
+}
