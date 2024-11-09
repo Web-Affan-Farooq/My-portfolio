@@ -52,7 +52,7 @@ const Ratings = () => {
         if (entry.isIntersecting) {
           let counter = 0;
           const interval = setInterval(() => {
-            if (counter <= 1200) {
+            if (counter <= 1) {
               setCount_3(counter);
               counter++;
             } else {
@@ -87,19 +87,19 @@ const Ratings = () => {
         <br />
         <div className="flex flex-row flex-wrap gap-5 justify-center align-middle">
           <div className="p-5 w-60 text-center" ref={rateBoxRef_1}>
-            <div className="text-5xl font-bold text-link">{count_1}</div>
+            <div className="text-5xl font-bold text-link">{count_1}+</div>
             <div>
               <h1 className='text-gray-400'>Contributions</h1>
             </div>
           </div>
           <div className="p-5 w-60 text-center" ref={rateBoxRef_2}>
-            <div className="text-5xl font-bold text-link">{count_2}</div>
+            <div className="text-5xl font-bold text-link">{count_2}+</div>
             <div>
               <h1 className='text-gray-400'>Completed Projects</h1>
             </div>
           </div>
           <div className="p-5 w-60 text-center" ref={rateBoxRef_3}>
-            <div className="text-5xl font-bold text-link">{count_3}</div>
+            <div className="text-5xl font-bold text-link">{count_3}K+</div>
             <div>
               <h1 className='text-gray-400'>On Linkedin</h1>
             </div>

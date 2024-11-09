@@ -18,19 +18,8 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
-## Learn More
-
-To learn Next.js:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-## Deployed on Vercel:
-
-[Check it out](www.welcome.com);
+[Check it out](https://my-portfolio-two-rho-84.vercel.app/);
 
 ## Documentation:
 This is the website template owned by me [Muhammad affan](https://www.linkedin.com/in/muhammad-affan-139a3a290/) .
@@ -45,12 +34,12 @@ This is the website template owned by me [Muhammad affan](https://www.linkedin.c
 - Apply intersection observer (no need)
 - Link 30 days of coding challenge
 - Implement nessessary animations. (optional)
-- Projects to be included: 
+- Projects will be included soon: 
  - Full fledge recipe application
  - Resume builder
  - Educational platform
  - Clock App
- - Banking App
+ - Banking App ui
  - Full stack project management app
  - Dashboard maker
  - Clickup ecommerce
