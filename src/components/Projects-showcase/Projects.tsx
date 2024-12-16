@@ -35,6 +35,10 @@ const Projects = () => {
             <Project_card project_name='portfolio template' project_description='🚀 Portfolio Template With Stunning Animations' project_image='/images/portfolio.png' project_link='https://muhammad-affan.netlify.app/' technologies={['/images/html.svg','/images/css.svg', '/images/javascript.svg', '/images/figma.svg' , '/images/git.svg']}/>
             <Project_card project_name='portfolio template' project_description='🚀 Portfolio Template With Stunning Animations' project_image='/images/portfolio.png' project_link='https://muhammad-affan.netlify.app/' technologies={['/images/shadcn.png', '/images/reactjs.svg' , '/images/tailwind.svg']}/>
         </div>
+        <br /><br />
+       <Link href={"/Projects"}>
+       <p className='text-link text-center'>See more ...</p>
+       </Link>
     </section>
   )
 }
