@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         'link': "#4083c7",
         'primary': "#1bbe46",
+        'greenlight':"#36e398",
       },
       backgroundImage: {
         'desktop': "url('/images/desktop.png')",

@@ -17,7 +17,7 @@ const Services_card = ({cardTitle, cardDescription}:Card) => {
       </p>
 
       <div className="flex flex-row flex-nowrap justify-end items-center">
-      <Link href={"/Projects"}>
+      <Link href={"/"}>{/* link to the projects route */}
             <span className='w-10 h-10 bg-black text-center font-bold rounded-full flex flex-col justify-center align-middle -rotate-45'>
             <i className="text-white fa-solid fa-arrow-right"></i>
             </span>

@@ -15,7 +15,7 @@ const Contact = () => {
                                 <input type="text" name="clien_name" id="name" placeholder="Enter your name" required className='border-b-[1px] border-solid border-link w-[300px] h-[30px] p-[20px] bg-transparent' />
                             </label>
                             <label htmlFor="Enter Email">
-                                <input type="text" name="clien name" id="name" placeholder="Enter Email" required className='border-b-[1px] border-solid border-link w-[300px] h-[30px] p-[20px] bg-transparent' />
+                                <input type="text" name="clienName" id="name" placeholder="Enter Email" required className='border-b-[1px] border-solid border-link w-[300px] h-[30px] p-[20px] bg-transparent' />
                             </label>
                             <label htmlFor="Project name">
                                 <input type="text" name="Project name" id="name" placeholder="Enter project name" required className='border-b-[1px] border-solid border-link w-[300px] h-[30px] p-[20px] bg-transparent' />
