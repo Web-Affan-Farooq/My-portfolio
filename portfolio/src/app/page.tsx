@@ -5,7 +5,6 @@ import Hero from '@/components/Hero/Hero';
 import About from '@/components/About/About';
 import Skills from '@/components/Skills/Skills';
 import Projects from '@/components/Projects-showcase/Projects';
-import Feed from '@/components/Feed/Feed';
 import Services from '@/components/Services/Services';
 import Ratings from '@/components/Ratings/Ratings';
 import Follow from '@/components/Follow/Follow';
@@ -18,7 +17,7 @@ const Home = () => {
       <About/>
       <Skills/>
       <Projects/>
-      <Feed/>
+      {/* <Feed/> */}
       <Services/>
       <Ratings/>
       <Follow/>

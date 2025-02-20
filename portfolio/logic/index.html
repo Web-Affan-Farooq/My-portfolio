@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <!-- ____Basic of gsap___-->
+    <!-- <div class="box">
+        <h1 class="heading">Hello</h1>
+    </div>    
+    <script>
+        // gsap.to(".box", {
+//     x:100,
+//     duration:2,
+//     delay:1
+// });  // from initial position to final position
+gsap.from(".box", {
+    x:500,
+    duration:2,
+    delay:1,
+    rotateZ:360,
+    rotateX:180,
+    rrotateY:180,
+    backgroundColor:"green",
+    borderRadius:20,
+    scale:2
+});  // from final position to initial position
+
+    </script> -->
+
+    <!-- ____Text effects___-->
+<!-- 
+    <div style="background-color: black; width: 100vw; height: 100vh; color:rgb(211, 98, 117)">
+        <h1>I'm</h1>
+        <h1>Muhammad </h1>
+        <h1>Affan</h1>
+    </div>
+    <script>
+        gsap.from("h1", {
+color:'white',
+duration:1,
+opacity:0,
+y:30,
+stagger:0.5
+})
+    </script> -->
+
+        <!-- Repeating animation effects___-->
+    <!-- <div class="box"> 
+        Hello
+    </div>
+    <script>
+        gsap.to(".box", {
+    x: 400,
+    duration: 1,
+    borderRadius: 20,
+    rotate: 360,
+    repeat: -1, // infinite
+    yoyo: true
+}
+)
+    </script> -->
+
+    <div class="nav" style="background-color: red; display: flex; justify-content: space-between; padding:10px 20px; align-items: center; ">
+        <h1 class="logo">Logo</h1>
+        <div class="options" style="display: flex; flex-direction: row ; flex-wrap:nowrap; gap:20px; ">
+            <h4 class="option-1">Home </h4>
+            <h4 class="option-2">Blog</h4>
+            <h4 class="option-3">Contact</h4>
+            <h4 class="option-4">Hello</h4>
+        </div>
+    </div>
+<div class="box-1" style="background-color: green; width: 100px; height: 100px; color:white">box-1</div>
+<div class="box-2" style="background-color: blue; width: 100px; height: 100px; color:white">box-2</div>
+<div class="box-3" style="background-color: red; width: 100px; height: 100px; color:white">box-3</div>
+</body>
+</html>

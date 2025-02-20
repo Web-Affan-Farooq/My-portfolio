@@ -17,6 +17,7 @@ const config: Config = {
         'desktop': "url('/images/desktop.png')",
         'mobile': "url('/images/mobile.png')",
         'avatar': "url('/images/avatar.jpg')",
+        'logo': "url('/images/logo.jpeg')"
       },
       backgroundColor: {
         "glass": "rgba(255,255,255,0.1)"

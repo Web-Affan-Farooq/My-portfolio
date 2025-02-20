@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className='flex flex-row flex-nowrap justify-center items-center'>
       <section className='section-2 text-white w-[85vw] py-20 flex flex-col flex-nowrap justify-start items-start'>
-        <h1 className='text-[100px] leading-[78px] font-semibold relative right-[10px] max-sm:text-[80px] max-sm:leading-[68px] max-md:text-[80px] max-md:leading-[68px] w-[70vw] max-lg:w-[80vw] max-md:w-full border-2 border-solid borer-white'> Beyond The <span className='text-primary'> Resume</span></h1>
+        <h1 className='text-[100px] leading-[80px] font-semibold relative right-[10px] max-sm:text-[80px] max-sm:leading-[68px] max-md:text-[80px] max-md:leading-[70px] w-[70vw] max-lg:w-[80vw] max-md:w-full'> Beyond The <span className='text-primary'> Resume</span></h1>
         <br />
       <div className='w-[500px] max-sm:w-[400px] max-[500px]:w-[350px]'>
       <h2 className='text-[26px]'> Here’s a bit <span className='text-greenlight font-normal'>About Me</span> and what I bring to the table .</h2>
