@@ -27,3 +27,4 @@ This web app is using Jamstack architecture .
 - Attach custom created orbital skills rotate image from figma 
 - Attach 3d icons if nessessary
 - Create frontend first then integrate sanity
+- Organize and maintain the categories in projects create projects details page 

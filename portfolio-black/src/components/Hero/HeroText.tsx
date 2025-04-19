@@ -80,15 +80,15 @@ const HeroText = () => {
             </div>
 
             {/* Mobile View */}
-            <div className='flex flex-col justify-center items-start sm:p-10 max-sm:p-6 gap-5 md:hidden'>
+            <div className='flex flex-col justify-center items-start sm:p-10 max-sm:p-6 max-[400px]:p-0 gap-5 md:hidden'>
                 <div className='w-full'>
                     <div className="h-[100px] overflow-hidden">
-                        <h1 className='banner-mobile text-white-custom font-firacode font-bold text-[70px] max-[500px]:text-[55px]'>
+                        <h1 className='banner-mobile text-white-custom font-firacode font-bold text-[70px] max-[500px]:text-[55px] max-[400px]:text-[45px]'>
                             Full-stack
                         </h1>
                     </div>
                     <div className="h-[100px] overflow-hidden">
-                        <h1 className='banner-mobile ml-16 text-white-custom font-firacode font-bold text-[70px] max-[500px]:text-[55px]'>
+                        <h1 className='banner-mobile ml-16 max-[400px]:ml-0 text-white-custom font-firacode font-bold text-[70px] max-[500px]:text-[55px] max-[400px]:text-[45px]'>
                             Developer
                         </h1>
                     </div>

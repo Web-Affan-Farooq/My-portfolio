@@ -74,10 +74,18 @@ const Header = () => {
         "-translate-x-0" : navStatus,
         "-translate-x-[100vw]":!navStatus
       })}>
-      <Link href={"/"} className='nav-options'>Home</Link>
-        <Link href={"/projects"} className='nav-options'>Projects</Link>
-        <Link href={"/"} className='nav-options'>Articles</Link>
-        <Link href={"/"} className='nav-options'>Contacts</Link>
+      <Link href={"/"} className='nav-options' onClick={() => {
+        setnavStatus(!navStatus);
+      }}>Home</Link>
+        <Link href={"/projects"} className='nav-options' onClick={() => {
+          setnavStatus(!navStatus);
+        }}>Projects</Link>
+        <Link href={"/"} className='nav-options' onClick={() => {
+          setnavStatus(!navStatus);
+        }}>Articles</Link>
+        <Link href={"/"} className='nav-options' onClick={() => {
+          setnavStatus(!navStatus);
+        }}>Contacts</Link>
       </div>
 
       {navStatus?<HiXMark  size={30} className='text-white sm:hidden block' onClick={handleSideNav}/> : <IoMenuSharp size={30} className='text-white sm:hidden block' onClick={handleSideNav}/> }
