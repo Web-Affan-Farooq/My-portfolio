@@ -55,7 +55,12 @@
 
 "use client";
 import Image from "next/image";
-import {IoIosArrowRoundForward} from "react-icons/io"
+import {IoIosArrowRoundForward} from "react-icons/io";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface Iskill {
     name: string;
@@ -69,8 +74,10 @@ interface Iproject {
     // link: string;
 }
 const Project_card = ({ project_name, project_skills, short_description }: Iproject) => {
+
+    // Attach animations on this card also 
     return (
-        <div className="relative mb-24">
+        <div className="project-card relative mb-24">
             <div className="grid md:grid-cols-2 gap-8 items-center">
                 {/* Text Content */}
                 <div className="flex flex-col flex-nowrap justify-center items-start gap-4">
@@ -145,13 +152,19 @@ const Project_card = ({ project_name, project_skills, short_description }: Iproj
 }
 
 export default function ProjectsSection() {
+        useGSAP(() => {
+            // GSAP animation for desktop and tablets
+            gsap.fromTo(".project-head", { opacity: 0, y: 100, duration: 0.8, stagger: 0.3 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.3 });
+        });
     return (
         <section className="relative bg-black text-white py-[100px] px-4 sm:px-6 lg:px-16 overflow-hidden">
             <div className="max-w-7xl mx-auto">
-                <h1 className=" p-[30px] text-white-custom font-firacode font-semibold text-right text-[50px] sm:text-[77px] lg:text-[100px] xl:text-[120px] 2xl:text-[130px]">
+                <div className="overflow-hidden h-[100px] md:h-[170px]">
+                <h1 className="project-head px-[30px] text-white-custom font-firacode font-semibold text-right text-[50px] sm:text-[77px] lg:text-[100px] xl:text-[120px] 2xl:text-[130px]">
                 My Work
                 </h1>
-
+                </div>
+                <br /><br />
                 {/* Gostat Section */}
                 <Project_card project_name="Example project_1" short_description="kjhj jer  ejrhj hdbf dsfjudsf jsdfd sjfbd  fkgkl gfg dflgknm dsfhdjfnd fdksl fiodsf erjh cehrjc herh uer cue ruehr uh" project_skills={[
                     {

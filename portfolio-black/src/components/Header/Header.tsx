@@ -85,7 +85,7 @@ const Header = () => {
         }}>Articles</Link>
         <Link href={"/"} className='nav-options' onClick={() => {
           setnavStatus(!navStatus);
-        }}>Contacts</Link>
+        }}>Contact</Link>
       </div>
 
       {navStatus?<HiXMark  size={30} className='text-white sm:hidden block' onClick={handleSideNav}/> : <IoMenuSharp size={30} className='text-white sm:hidden block' onClick={handleSideNav}/> }
