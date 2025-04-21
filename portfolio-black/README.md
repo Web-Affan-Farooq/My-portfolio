@@ -16,8 +16,26 @@ This web app is using Jamstack architecture .
 - Framework : Next.JS
 - Backend : Sanity headless CMS
 
+## API Docs :
+Use this querry to fetch data . 
+```sql
+*[_type == "projects"]{
+  _id,
+  project_name,
+  project_link,
+  project_github_link,
+  project_description,
+  "project_images": project_images[].asset->url,
+  "project_tags": project_tags[]{
+    project_tech_text,
+    "project_tech_image": project_tech_image.asset->url
+  }
+}
+
+```
 ## To be implemented :
 - Attach remaining animations with relevant libaries ie. gsap and framermotion
+- Create components collection page
 - Create showing tags functionalinty in projects section like github ()
 - Create background images from figma 
 - Edit the schema of sanity to be fit for this portfolio 

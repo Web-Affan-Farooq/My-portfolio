@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@sanity/client": "^6.29.0",
     "clsx": "^2.1.1",
     "gsap": "^3.12.7",
     "lenis": "^1.2.3",

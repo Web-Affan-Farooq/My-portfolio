@@ -5,23 +5,25 @@
 @import "tailwindcss";
 
 :root {
-  --white-color:#F5F5F5;
-  --black-color:#121212;
-  --dark-gray:#3D3D3D;
-  --light-gray:#A6A6A6;
-  --firacode:"Fira Code", monospace;
-  --opensans:"Open Sans", sans-serif;
-  --poppins:"Poppins", sans-serif;
-  --breakpoint-article-card:60rem;
-  --border-test:2px solid white;
+  --white-color: #F5F5F5;
+  --black-color: #121212;
+  --dark-gray: #3D3D3D;
+  --light-gray: #A6A6A6;
+  --firacode: "Fira Code", monospace;
+  --opensans: "Open Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --breakpoint-article-card: 60rem;
+  --border-test: 2px solid white;
+  /* --shadow-tag:0px 0px 1000px 10px; */
 }
 
 @theme inline {
-  --color-light-gray:var(--light-gray);
-  --color-dark-gray:var(--dark-gray);
-  --color-black-custom:var(--black-color);
-  --color-white-custom:var(--white-color);
-  --font-firacode:var(--firacode);
-  --font-opensans:var(--opensans);
-  --font-poppins:var(--poppins);
+  --color-light-gray: var(--light-gray);
+  --color-dark-gray: var(--dark-gray);
+  --color-black-custom: var(--black-color);
+  --color-white-custom: var(--white-color);
+  --font-firacode: var(--firacode);
+  --font-opensans: var(--opensans);
+  --font-poppins-small: var(--poppins);
+  /* --shadow-tag:var(--shadow-tag); */
 }

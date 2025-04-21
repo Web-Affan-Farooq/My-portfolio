@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import HeaderVisibilityContextProvider from "@/context/HeaderContext";
 
 export const metadata: Metadata = {
   title: "Muhammad Affan",
@@ -18,9 +20,11 @@ export default function RootLayout({
       <body
         className={`font-opensans bg-black text-light-gray`}
       >
-        <Header/>
-        {children}
-        {/* <Footer/> */}
+        <HeaderVisibilityContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </HeaderVisibilityContextProvider>
       </body>
     </html>
   );

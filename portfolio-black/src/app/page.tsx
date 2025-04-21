@@ -7,19 +7,16 @@ import { useEffect } from 'react';
 import Lenis from 'lenis';
 
 const Home = () => {
+
   useEffect(() => {
-// Initialize Lenis
-const lenis = new Lenis();
+    const lenis = new Lenis();
 
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time:any) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
-
-  },[]);
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <main>

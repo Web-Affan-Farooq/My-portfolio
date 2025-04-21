@@ -3,6 +3,7 @@ import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Link from "next/link";
 
 const HeroText = () => {
     useGSAP(() => {
@@ -38,14 +39,14 @@ const HeroText = () => {
                             Full-stack
                         </h1>
 
-                        <div className='flex items-center gap-2'>
+                        <Link href={"/projects"} className='flex items-center gap-2'>
                             <button className="bg-white-custom rounded-[40px] text-black lg:px-[100px] md:px-[80px] py-[13px]">
                                 <i>Projects</i>
                             </button>
                             <button className='bg-white-custom rounded-full'>
                                 <IoIosArrowRoundForward size={50} className='font-bold' />
                             </button>
-                        </div>
+                        </Link>
 
                     </div>
                 </div>
@@ -101,8 +102,8 @@ const HeroText = () => {
                 </div>
 
                 <div className="h-[60px] overflow-hidden">
-                    
-                    <div className='banner-mobile flex items-center gap-2'>
+
+                    <Link href={"/projects"} className='banner-mobile flex items-center gap-2'>
                         <button className='bg-white-custom  rounded-[40px] text-black 
                     sm:px-[70px] sm:py-[13px]
                     max-sm:px-[55px] max-sm:py-[11px]
@@ -112,7 +113,7 @@ const HeroText = () => {
                         <button className='bg-white-custom rounded-full'>
                             <IoIosArrowRoundForward size={50} className='font-bold' />
                         </button>
-                    </div>
+                    </Link>
 
                 </div>
             </div>
