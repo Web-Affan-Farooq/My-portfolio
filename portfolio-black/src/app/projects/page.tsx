@@ -48,7 +48,7 @@ export default function ProjectsSection() {
                     </h1>
                 </div>
                 <br /><br />
-                <div className="grid grid-cols-2 w-full gap-[10px]">
+                <div className="grid max-sm:grid-cols-1 sm:grid-cols-2 w-full max-sm:gap-[40px] sm:gap-[10px]">
                     {
                         data.map((project: Project, idx: number) => {
                             return <Project_card project={project} key={idx}/>
