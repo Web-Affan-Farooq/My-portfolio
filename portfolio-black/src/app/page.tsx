@@ -21,9 +21,9 @@ const Home = () => {
   return (
     <main>
       <article>
-        <Hero />
+        {/* <Hero /> */}
         <About />
-        <Articles />
+        {/* <Articles /> */}
       </article>
     </main>
   )

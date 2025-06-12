@@ -80,15 +80,48 @@ const MainAbout = () => {
 }
 
 
+// const About = () => {
+//     return (
+//         <section className='w-full'>
+//             <UpperHead />
+//             <MainAbout />
+//             {/* Bottom spacing */}
+//             <div className="h-[200px]"></div>
+//         </section>
+//     )
+// }
+
+// export default About
+
 const About = () => {
     return (
-        <section className='w-full'>
-            <UpperHead />
-            <MainAbout />
-            {/* Bottom spacing */}
-            <div className="h-[200px]"></div>
-        </section>
-    )
-}
+        <section className="border-2 border-solid border-white my-10 px-[10px]">
+            {/* Spacing */}
+            <div className="h-[100px] sm:h-[200px]" />
 
-export default About
+            {/* Header Section */}
+            <div className="flex flex-row flex-nowrap justify-between items-center">
+                <p className="text-[15px]">
+                    Myself &nbsp;
+                    <span className="font-bold text-white uppercase">Muhammad Affan</span>
+                </p>
+
+                <h1 className="text-white-custom font-firacode font-semibold text-right text-[50px] sm:text-[77px] lg:text-[100px] xl:text-[120px] 2xl:text-[130px]">
+                    About me
+                </h1>
+            </div>
+
+            {/* Content Section */}
+            <div className="mt-10">
+                <h2 className="uppercase text-[20px] font-semibold text-gray-400">
+                    Heading kjkdfjd fdifjdf ddfld fdlif difopdi ofpidsopf iopdsfiopds ifopdsifopi
+                </h2>
+                <p className="text-[15px] tracking-[0.5px] text-white mt-2">
+                    jhfjdsfh djsfh dsjfhjsdhfjdshfjkdh jfhdjhfjdhsfjdshfjhd
+                </p>
+            </div>
+        </section>
+    );
+};
+
+export default About;

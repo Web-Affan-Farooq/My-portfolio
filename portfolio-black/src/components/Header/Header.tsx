@@ -74,7 +74,8 @@ const Header = () => {
         <Link href={"/"} className='nav-options 2xl:text-[20px]'>Home</Link>
         <Link href={"/projects"} className='nav-options 2xl:text-[20px]'>Projects</Link>
         <Link href={"/"} className='nav-options 2xl:text-[20px]'>Articles</Link>
-        <Link href={"/"} className='nav-options 2xl:text-[20px]'>Contact</Link>
+        <Link href={"/"} className='nav-options 2xl:text-[20px]'>Contact me</Link>
+        {/* <Link href={"/"} className='nav-options 2xl:text-[20px]'>About me</Link> */}
       </div>
 
       <div className={clsx(`py-[100px] flex-col absolute top-0 left-0 bg-black w-[80vw] h-screen flex-wrap justify-center items-center gap-[40px] transition-all duration-400 ease-in-out hidden max-sm:flex`, {
@@ -92,7 +93,10 @@ const Header = () => {
         }}>Articles</Link>
         <Link href={"/"} className='nav-options-mobile' onClick={() => {
           setnavStatus(!navStatus);
-        }}>Contact</Link>
+        }}>Contact me</Link>
+        {/* <Link href={"/"} className='nav-options-mobile' onClick={() => {
+          setnavStatus(!navStatus);
+        }}>About me</Link> */}
       </div>
 
       {navStatus ? <HiXMark size={30} className='text-white sm:hidden block' onClick={handleSideNav} /> : <IoMenuSharp size={30} className='text-white sm:hidden block' onClick={handleSideNav} />}

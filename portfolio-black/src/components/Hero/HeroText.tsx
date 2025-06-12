@@ -61,7 +61,7 @@ const HeroText = () => {
                         <div className='lg:w-[400px]
                      md:w-[300px]
                     text-left'>
-                            <p>
+                            <p className="text-[15px] text-gray-400 tracking-[0.5px]">
                                 My goal is to <i className='text-white-custom'>write maintainable, clean</i> and <i className='text-white-custom'>understandable code</i> to make the development process enjoyable.
                             </p>
                         </div>
@@ -96,7 +96,7 @@ const HeroText = () => {
                 </div>
 
                 <div className='overflow-hidden text-[20px] sm:w-[400px] max-sm:w-[350px] text-left'>
-                    <p className="banner-mobile">
+                    <p className="banner-mobile text-[15px] text-gray-400 tracking-[0.5px]">
                         My goal is to <i className='text-white-custom'>write maintainable, clean</i> and <i className='text-white-custom'>understandable code</i> to make the development process enjoyable.
                     </p>
                 </div>
