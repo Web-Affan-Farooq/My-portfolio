@@ -1,0 +1,2 @@
+- Create a helper scetion in the front page by refering the image helper-section-inspiration.png
+- Create Header using this https://lobehub.com/icons/gemini
