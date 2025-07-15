@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroText from './HeroText';
 import LinkButtons from './LinkButtons';
 
@@ -9,9 +8,6 @@ const Hero = () => {
             <br />
             <br />
             <LinkButtons />
-            <br />
-            <br />
-
             {/* Bottom spacing */}
             <div className="h-[150px]"></div>
         </section>

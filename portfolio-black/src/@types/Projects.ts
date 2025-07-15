@@ -1,8 +1,8 @@
-export interface Tags {
+export type Tags =  {
     project_tech_text: string;
     project_tech_image: string;
 }
-export interface Project {
+export type Project = {
     project_category:string;
     project_github_link: string;
     project_description: string;

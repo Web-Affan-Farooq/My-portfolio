@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const Skills = () => {
     const skillsImage =
     {
@@ -102,7 +104,7 @@ const Skills = () => {
                     <div className='flex flex-wrap gap-2'>
                         {skillsImage["Fullstack development"].map((skill,idx) => (
 <div key={idx} className="flex flex-row flex-nowrap justify-center items-center gap-[5px]">
-    <img src={skill.src} alt={skill.name} className={`rounded-[20px] w-[35px] h-auto object-cover shadow-md ${skill.shadow}`}/>
+    <Image src={skill.src} alt={skill.name} className={`rounded-[20px] w-[35px] h-auto object-cover shadow-md ${skill.shadow}`}/>
     <span className="text-sm">{skill.name} </span>
 </div>
                         ))}
@@ -119,7 +121,7 @@ const Skills = () => {
                     <div className='flex flex-wrap gap-2'>
                         {skillsImage["Agentic AI"].map((skill,idx) => (
 <div key={idx} className="flex flex-row flex-nowrap justify-center items-center gap-[5px]">
-    <img src={skill.src} alt={skill.name} className={`rounded-[20px] w-[35px] h-auto object-cover shadow-md ${skill.shadow}`}/>
+    <Image src={skill.src} alt={skill.name} className={`rounded-[20px] w-[35px] h-auto object-cover shadow-md ${skill.shadow}`}/>
     <span className="text-sm">{skill.name} </span>
 </div>
                         ))}
@@ -136,7 +138,7 @@ const Skills = () => {
                     <div className='flex flex-wrap gap-2'>
                         {skillsImage["Devops"].map((skill,idx) => (
 <div key={idx} className="flex flex-row flex-nowrap justify-center items-center gap-[5px]">
-    <img src={skill.src} alt={skill.name} className={`rounded-[20px] w-[35px] h-auto object-cover shadow-md ${skill.shadow}`}/>
+    <Image src={skill.src} alt={skill.name} className={`rounded-[20px] w-[35px] h-auto object-cover shadow-md ${skill.shadow}`}/>
     <span className="text-sm">{skill.name} </span>
 </div>
                         ))}

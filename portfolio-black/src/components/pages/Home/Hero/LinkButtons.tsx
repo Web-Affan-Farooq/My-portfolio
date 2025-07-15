@@ -1,41 +1,54 @@
-import React from "react";
-import { IoLogoGithub } from "react-icons/io";
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
-import { RiTelegram2Fill } from "react-icons/ri";
+"use client"
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const LinkButtons = () => {
+    const linkButtons = useRef<HTMLDivElement | null>(null);
+
+    useGSAP(() => {
+        if(linkButtons.current) {
+            gsap.fromTo(
+                linkButtons.current,
+                {
+                    x:-500,
+                    duration:1
+                },
+                {
+                    x:0,
+                    duration:1,
+                }
+            )
+        }
+    },[]);
+
     const socialLinks = [
-        { icon: <IoLogoGithub />, label: "Github" },
-        { icon: <FaLinkedinIn />, label: "Linkedin" },
-        { icon: <RiTelegram2Fill />, label: "Telegram" },
-        { icon: <FaFacebookF />, label: "Facebook" },
-        { icon: <FaInstagram />, label: "Instagram" },
+        { src:"/icons/github.svg", label: "Github" , link:"https://github.com/Web-Affan-Farooq"},
+        { src:"/icons/linkedin.svg", label: "Linkedin",link:"https://linkedin.com/in/muhammad-affan-139a3a290" },
     ];
 
     return (
-        <div className='p-5 w-full flex justify-center items-center'>
-            <div className='flex flex-row flex-wrap justify-center max-sm:justify-start items-center gap-5 m-auto'>
+        <div className='p-5 w-full flex '>
+            <div ref={linkButtons} className='flex gap-5 max-[400px]:mx-0 mx-10'>
                 {socialLinks.map((link, index) => (
-                    <button
-                        key={index}
+                    <Link href={link.link} key={index}>
+                        <button
                         type="button"
                         className="
-                            relative overflow-hidden
-                            px-[20px] py-[8px]
+                            relative overflow-hidden max-sm:text-sm
+                            px-[20px] py-[8px] max-sm:px-[20px] max-sm:py-[10px]
                             flex flex-row flex-nowrap justify-center items-center gap-2
                             shadow-md shadow-gray-800 border border-gray-700 rounded-[30px]
-                            text-white-custom hover:text-black-custom
+                            text-white-custom
                             transition-colors duration-300
-
-                            before:content-[''] before:absolute before:inset-0
-                            before:bg-white-custom before:-z-10
-                            before:scale-x-0 hover:before:scale-x-100
-                            before:origin-left before:transition-transform before:duration-300
                         "
                     >
-                        {link.icon}
+                        <Image src={link.src} width={20} height={20} className="w-[20px] h-[20px]" alt={link.label}/>
                         <span className="z-10">{link.label}</span>
                     </button>
+                    </Link>
                 ))}
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectsSection } from '@/components'
+import { ProjectsSection } from '@/components/pages'
 
 const Projectspage = () => {
     return (

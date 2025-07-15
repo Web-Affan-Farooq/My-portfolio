@@ -1,19 +1,38 @@
-import { ArrowUp } from "lucide-react"
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react"
+import { ArrowUp } from "lucide-react";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger)
 
 const MainAbout = () => {
+
+    useGSAP(() => {
+            gsap.to(".heading-chunks", {
+                x:500,
+                duration:3
+            });
+    }, []);
     return (
         <>
-        <div className="2xl:w-[85vw] 2xl:px-20 xl:w-[85vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] mx-auto ">
-                        <h1 className='px-5 m-auto text-white-custom text-left w-full font-firacode font-bold 
+            <div className="2xl:w-[85vw] 2xl:px-20 xl:w-[85vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] mx-auto overflow-y-hidden">
+                <h1 className='px-5 m-auto text-white-custom text-left w-full font-firacode font-bold 
                     2xl:text-[110px]
                     xl:text-[100px]
                     lg:text-[80px] 
                     md:text-[57px]
                     sm:text-[40px]
-                    max-sm:text-[30px]'>
-                About me
-            </h1>
-        </div>
+                    max-sm:text-[30px] about-head' >
+                    <span className="heading-chunks">A</span>
+                    <span className="heading-chunks">b</span>
+                    <span className="heading-chunks">o</span>
+                    <span className="heading-chunks">u</span>
+                    <span className="heading-chunks">t</span>
+                    <span className="heading-chunks"> </span>
+                    <span className="heading-chunks">m</span>
+                    <span className="heading-chunks">e</span>
+                </h1>
+            </div>
             <div className='flex flex-row max-sm:flex-col justify-between lg:justify-evenly items-center gap-10 p-6'>
                 <div className="sm:w-1/2 md:w-1/2">
                     <p className="text-gray-400 max-sm:w-full">
@@ -27,7 +46,7 @@ const MainAbout = () => {
                     <br />
                     {/* <a href={"/projects"} className='flex items-center gap-2 border border-white'> */}
                     <div className="flex flex-row flex-nowrap justify-start items-center">
-                                                <button className="bg-white-custom rounded-[40px] text-black lg:px-[100px] md:px-[80px] sm:px-[40px] max-sm:px-[30px] py-[13px]">
+                        <button className="bg-white-custom rounded-[40px] text-black lg:px-[100px] md:px-[80px] sm:px-[40px] max-sm:px-[30px] py-[13px]">
                             <i>Download CV</i>
                         </button>
                         <button className='text-center flex justify-center items-center bg-white-custom rounded-full w-[50px] h-[50px]'>

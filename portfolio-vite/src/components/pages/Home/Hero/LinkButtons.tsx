@@ -30,9 +30,8 @@ const LinkButtons = () => {
         <div className='p-5 w-full flex '>
             <div ref={linkButtons} className='flex gap-5 max-[400px]:mx-0 mx-10'>
                 {socialLinks.map((link, index) => (
-                    <a href={link.link}>
+                    <a href={link.link} key={index}>
                         <button
-                        key={index}
                         type="button"
                         className="
                             relative overflow-hidden max-sm:text-sm
