@@ -1,6 +1,7 @@
 import sanityClient from '@/lib/sanity';
 import type { Project } from '@/@types/Projects';
 import Project_card from './Card';
+// import { testprojects } from '@/constants';
 
 const Main = async () => {
         const q = `
@@ -19,31 +20,7 @@ const Main = async () => {
     }
       `
     const data = await sanityClient.fetch(q);
-
-    // const project = {
-    //     project_category: "Fullstack",
-    //     project_github_link: "/",
-    //     project_description: "this is project description df dfidhfi usdiofuiosd ufiosdufi usdifuiodsfiudfoiuiodufioufioudiofuoiduf idoisfu oidufsio udiofuoidsufoiduio fkjkdsjfkds jfdsjfkjdsklfjdslk fjkdsjflkdskf jsdkfjksdfjklsjdfkljdskl fjksdjfksdjlkfjsdklfjksd jfksjdfkjksdfjksdjfk sjdfkjslkdfjksdfklsj dfkjsdkfjksdjfkjdfkjdkj",
-    //     project_images: ["/images/example-project.png"],
-    //     project_tags: [
-    //         {
-    //             project_tech_text: "Streamlit",
-    //             project_tech_image: "/icons/streamlit.svg"
-    //         },
-    //         {
-    //             project_tech_text: "React",
-    //             project_tech_image: "/icons/react.svg"
-    //         },
-    //         {
-    //             project_tech_text: "Node.JS",
-    //             project_tech_image: "/icons/node.svg"
-    //         },
-    //     ],
-    //     _id: "1",
-    //     project_name: "Example projectdfjkds fkd sjfkjdksfjkldjfksdjflkjdklsfjkjdfkljdlfkjdk jfkj",
-    //     project_link: "/"
-    // }
-
+    // const data = testprojects;
     // Descri0ption maximum 4 lines
     // tags maximum 20
 
