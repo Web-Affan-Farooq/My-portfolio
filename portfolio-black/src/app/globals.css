@@ -27,3 +27,10 @@
   --font-poppins-small: var(--poppins);
   /* --shadow-tag:var(--shadow-tag); */
 }
+
+.bg-custom {
+  background-image: linear-gradient(rgba(227, 203, 143,0.1) 0%, color-mix(in oklab, var(--color-white) /* #fff = #ffffff */ 5%, transparent) 20%);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
