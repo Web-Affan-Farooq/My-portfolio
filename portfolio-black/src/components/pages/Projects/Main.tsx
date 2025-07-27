@@ -3,6 +3,11 @@ import type { Project } from '@/@types/Projects';
 import Project_card from './Card';
 // import { testprojects } from '@/constants';
 
+export interface Tags {
+    project_tech_text: string;
+    project_tech_image: string;
+}
+
 const Main = async () => {
         const q = `
         *[_type == "projects"]{
@@ -20,27 +25,24 @@ const Main = async () => {
     }
       `
     const data = await sanityClient.fetch(q);
-    // const data = testprojects;
-    // Descri0ption maximum 4 lines
-    // tags maximum 20
+    // console.log('Projects : ',data);
 
     return (
         <main>
             <article>
-                <section className="relative bg-black text-white py-[100px] px-4 sm:px-6 lg:px-16 overflow-hidden">
+                <section className="relative bg-black text-white py-[80px] px-3 sm:px-6 lg:px-16 overflow-hidden">
                     <div className="max-w-7xl mx-auto">
-                        <div className="overflow-hidden h-[100px] md:h-[170px]">
-                            <h1 className="project-head px-[30px] text-white-custom font-firacode font-semibold text-right text-[50px] sm:text-[77px] lg:text-[100px] xl:text-[120px] 2xl:text-[130px]">
+                        {/* Header */}
+                        <div className="overflow-hidden h-[100px] md:h-[170px] pt-10">
+                            <h1 className="project-head px-[20px] text-white-custom font-firacode font-semibold text-right text-[40px] sm:text-[65px] lg:text-[90px] xl:text-[110px] 2xl:text-[120px] leading-none">
                                 My Work
                             </h1>
                         </div>
-                        <br /><br />
-                        <div className='flex flex-col max-md:gap-[40px]'>
-                            {
-                                data.map((project: Project, idx: number) => {
-                                    return <Project_card project={project} key={idx} />
-                                })
-                            }
+
+                        <div className="mt-12 grid gap-10 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                            {data.map((project:Project, idx:number) => (
+                                <Project_card project={project} key={idx}/>
+                            ))}
                         </div>
                     </div>
                 </section>

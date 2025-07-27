@@ -3,27 +3,24 @@
 const ServicesData = [
   {
     name: "Frontend Development",
-    specs: ["I build Responsive frontend with React Or HTML CSS and Typescript .", "Styled with TailwindCSS", "Basic Animations", "Deployment setup on Vercel OR Netlify (without domain)"]
+    specs: "Crafting stunning, responsive, and interactive user interfaces using modern technologies."
   },
   {
     name: "AI integration",
-    specs: ["Gemini , OpenAI , or any other provider's API integration on the existing frontend OR Backend",
-      "Separate microservice development (optional)"
-    ]
+    specs: "Seamless integration of AI into your business using ChatGPT, Chainlit, and OpenAI APIs."
   },
   {
     name: "Chatbot development",
-    specs: ["Chatbot development using Chainlit OR React OR Next.JS",]
+    specs: "Building complete web applications from frontend to backend with scalable architecture."
   },
   {
     name: "Fullstack development",
-    specs: ["Full stack application build with Next.JS", "Styled with TailwindCSS or any library ", "Animated with GSAP , Scrolltrigger , Lenis and Locomotive.JS (on demand)", "External databases OR Headless CMS (Database keys required)"]
+    specs: "High-performance, SEO-friendly static websites powered by the JAMstack architecture."
   },
   {
     name: "Jamstack development",
-    specs: ["Next.JS app", "Integrated Sanity (Headless CMS)", "Stripe payments integration", "Authentication setup (custom and third party)", "Google Analytics setup and deployment on Vercel OR Netlify (without domain)", "AI integration (Keys required)"]
+    specs: "Tailored web applications for startups, businesses, or personal brands."
   }
-
 ]
 const Services = () => {
   return (
@@ -45,8 +42,8 @@ const Services = () => {
         {ServicesData.map((services, index) => (
           <div key={index} className="group w-full py-4 px-7 max-sm:px-5 rounded-lg bg-custom transition-all duration-200">
             {/* <div> */}
-              <h2 className="group-hover:text-white my-4 text-xl font-firacode font-semibold text-[#e3cb8f]">{services.name}</h2>
-              <p className="text-sm text-gray-500">{services.specs.join(" , ")}</p>
+            <h2 className="group-hover:text-white my-4 text-xl font-firacode font-semibold text-[#e3cb8f]">{services.name}</h2>
+            <p className="font-firacode text-sm leading-[19px] text-gray-500/80">{services.specs}</p>
             {/* </div> */}
           </div>
         ))}
