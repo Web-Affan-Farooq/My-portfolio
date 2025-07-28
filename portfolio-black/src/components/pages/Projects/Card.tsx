@@ -7,14 +7,14 @@ const Project_card = ({ project }: { project: Project }) => {
     return (
         <div className="p-2 sm:p-4 flex flex-col gap-4 w-full max-w-full">
             {/* Image */}
-<Image
-  src={project.project_images[0]}
-  alt={project.project_name}
-  width={300}
-  height={300}
-  className="w-full aspect-[4/3] max-sm:aspect-[5/4] object-cover rounded-lg transition-all duration-300 hover:scale-105"
-  quality={100}
-/>
+            <Image
+                src={project.project_images[0]}
+                alt={project.project_name}
+                width={300}
+                height={300}
+                className="w-full aspect-[4/3] max-sm:aspect-[5/4] object-cover rounded-lg transition-all duration-300 hover:scale-105"
+                quality={100}
+            />
 
 
             {/* Title */}

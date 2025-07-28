@@ -25,11 +25,8 @@ const Main = async () => {
     }
       `
     const data = await sanityClient.fetch(q,{},{
-        next:{
-            revalidate:600000,
-        }
+        cache:"no-store"
     });
-    // console.log('Projects : ',data);
 
     return (
         <main>
