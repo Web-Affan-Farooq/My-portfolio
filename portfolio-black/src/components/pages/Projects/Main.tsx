@@ -24,7 +24,11 @@ const Main = async () => {
       }
     }
       `
-    const data = await sanityClient.fetch(q);
+    const data = await sanityClient.fetch(q,{},{
+        next:{
+            revalidate:600000,
+        }
+    });
     // console.log('Projects : ',data);
 
     return (
