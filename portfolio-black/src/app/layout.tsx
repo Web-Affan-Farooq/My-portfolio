@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Header,Footer} from "@/components/layout";
+import { Header, Footer, SlidingWindow } from "@/components/layout";
 import HeaderVisibilityContextProvider from "@/context/HeaderContext";
 
 export const metadata: Metadata = {
@@ -19,11 +19,13 @@ export default function RootLayout({
       <body
         className={`font-opensans bg-black text-light-gray`}
       >
-        <HeaderVisibilityContextProvider>
-          <Header />
-          {children}
-          <Footer />
-        </HeaderVisibilityContextProvider>
+        <SlidingWindow>
+          <HeaderVisibilityContextProvider>
+            <Header />
+            {children}
+            <Footer />
+          </HeaderVisibilityContextProvider>
+        </SlidingWindow>
       </body>
     </html>
   );

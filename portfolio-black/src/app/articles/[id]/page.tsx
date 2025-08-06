@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Markdown from 'react-markdown';
 
 export default async function BlogPage(){
 
@@ -27,7 +26,6 @@ export default async function BlogPage(){
 
       {/* Blog Body */}
       <article className="prose prose-invert max-w-3xl mx-auto font-firacode prose-pre:bg-black prose-pre:text-white prose-code:text-sm prose-code:font-firacode prose-p:font-opensans prose-li:font-opensans">
-        <Markdown>
           dfdfkljds kfjd skfjdkls fklds jfkdsj fkldjslkfjdskfjkldsj fkl dsjfkljdksjf Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ducimus exercitationem voluptatum ea impedit animi cumque distinctio quasi laudantium nesciunt, amet libero cum sint eius maiores cupiditate similique voluptas blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non unde repellendus id, corporis sequi aliquam explicabo quo harum, odio minus eaque. Nostrum voluptate nihil beatae libero, molestiae veniam dolore.
           Veritatis fugiat quod beatae? Aspernatur illum iste provident animi et repudiandae esse error, rem assumenda pariatur autem nam aliquid nisi earum natus sapiente, obcaecati facere accusamus magni, odio in at.
           Magnam, sed! Ratione quam repellat sunt! Quam eum quidem corporis incidunt quae, aliquid saepe. Animi, autem veniam recusandae tenetur ipsam voluptates quod nihil molestiae sed eveniet id perspiciatis consectetur nisi.
@@ -39,7 +37,6 @@ export default async function BlogPage(){
           Recusandae doloremque consequuntur ex sapiente ab nulla ipsum vero ullam ipsam labore. Blanditiis dolore quae labore alias non? Illum impedit cum fuga a natus, laborum accusantium delectus architecto libero dignissimos!
 
 
-        </Markdown>
         </article>
         </main>
   )

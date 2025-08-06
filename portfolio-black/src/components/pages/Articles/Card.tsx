@@ -1,5 +1,6 @@
 import React from 'react'
-import {IoIosArrowRoundForward} from "react-icons/io";
+// import {IoIosArrowRoundForward} from "react-icons/io";
+import { ArrowBigRight } from 'lucide-react';
 import Link from 'next/link';
 
 interface Icard {
@@ -27,7 +28,7 @@ const Card = ({title, id, headline}:Icard) => {
                     <i className='break-none'>Read more</i>
                 </button>
                 <button className='bg-white-custom rounded-full'>
-                    <IoIosArrowRoundForward size={50} />
+                    <ArrowBigRight size={50} />
                 </button>
             </div>
             </Link>

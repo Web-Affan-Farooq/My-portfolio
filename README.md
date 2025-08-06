@@ -1,124 +1,48 @@
-## Portfolio website:
+# Portfolio :
 
-[Check it out](https://my-portfolio-two-rho-84.vercel.app/);
+### Index :
+- References
+- Updates 
+- To be implemented
 
-## Documentation:
-This is the website template owned by me [Muhammad affan](https://www.linkedin.com/in/muhammad-affan-139a3a290/) .
+## References :
+#### Design reference :
+- This portfolio is inspired by [This design](https://www.behance.net/gallery/199132655/Portfolio-Full-stack-Developer?tracking_source=search_projects|developer+portfolio&l=13) Designed by Taisia Tsyganok . See [Taisia Tsyganok on behance](https://www.behance.net/taisia_pro)
 
--  If you have any issue with that please [create an issue](https://github.com/Web-Affan-Farooq/My-portfolio/issues) on that repository. 
--  Want to contribute to that , Please [open pull request](https://github.com/Web-Affan-Farooq/My-portfolio/pulls)
--  You will also have chance on contribute to my other projects [See the list](https://github.com/Web-Affan-Farooq?tab=repositories)
+#### Tech stack :
+This web app is using Jamstack architecture .
 
----
-## Schema for sanity:
-- Schema for banner (heading paragraph, banner image)
-- Schema for about section (must contain content in block format).
-- Schema for skills (banner image for skills section,contains array of content)
-- Schema for project (project title, project image, short description, brief description skills mention names that should target specific images )
-- Schema for Services section (headline of services section, services name, service description, skills I used for this service);
-- Schema for ratings
+- Frontend : Typescript, TailwindCSS, React.JS
+- Framework : Next.JS
+- Backend : Sanity headless CMS
 
-## For Author: 
-- Create multistep user form
-- Implement more better banner 
-- Create background illustrations for skills and project section
-- Implment drag and drop functionality in skills
-- Create more better project section on home page
-- Fix the cards and implement robust responsiveness
-- Add Feed to feeds section
-- Fix counter logic
-- Create footer and add links
-- Create sidebar in entries section
-- Create Working terms
-- Create get in touch section
-- Permenantly remove the feeds section or implement a better showcasing 
-- Create a banner image containing your skills images and 
-- apply visible on scroll animations
-- Integrate Zod for validation and react hook form
-- Link 30 days of coding challenge
-- Implement nessessary animations. (optional)
-- the admin has the following permissions:
- 1. Admin must have permissions to create new entry
- 2. Admin must be able to view form submissions and requests
- 3. Admin must be able to view website traffic
- 4. Admin must be able to add, update or delete content of all pages 
- 5. Admin must be able to control website views be tracking or permenantly disable any section or component
+## API Docs :
+Use this querry to fetch data . 
+```sql
+*[_type == "projects"]{
+  _id,
+  project_name,
+  project_link,
+  project_github_link,
+  project_description,
+  "project_images": project_images[].asset->url,
+  "project_tags": project_tags[]{
+    project_tech_text,
+    "project_tech_image": project_tech_image.asset->url
+  }
+}
 
-- Create multi page form for hireme and add nessessary form fields for customer
-- Add nessessary content
-- Create and correct typo or any other project on entries section and implement addition of input fields
-
-- for design to code:
-Customer Information Form
-
-Your Name:
-
-LinkedIn or Instagram ID:
-(Please provide your LinkedIn or Instagram profile link.)
-
-Country of Residence:
-
-Online Presence:
-(If you have an online presence, please link it here.)
-
-Do you have any products already published online? If yes, please provide a link.
-
-
-How did you hear about me?
-(Which social media platform or other source led you to reach out?)
-
-Do you have a name in mind for your project?
-
-Project Type:
-(What kind of project would you like to start with me?)
-
-Project Overview:
-(Please give a brief description of your project.)
-
-Target Audience & Message:
-(Who is your target audience, and what message do you want to communicate through your project?)
-
-Preferred Project Delivery Date:
-
-Portfolio or Personal Introduction:
-(If you have a portfolio or any introductory materials, please link to them here.)
-
-Upload Design Files:
-(Upload a custom design file, or provide a link to Figma.)
-
-Project Requirements & Best Practices:
-(Briefly outline any best practices or specific requirements you’d like me to follow.)
-
-Design Tools You Use:
-
-Tools for Project Development:
-(What tools do you expect to be used for this project?)
-
-Have You Explored My Work?
-(If so, what makes you feel I am the best fit for your project?)
-
-Additional Questions or Concerns:
-(Feel free to ask any additional questions related to your project.)
-
-
--- craete another form to be sended on delivery time
-Customer Feedback Form
-
-Project Satisfaction:
-(Did you encounter any issues or find any incomplete aspects of the project? Please describe them briefly.)
-
-Project Improvement Feedback:
-(Is there anything in the project you think could be improved?)
-
-Customer Service Feedback:
-(Do you have any suggestions for improving our customer service?)
-
-Feedback on Our Agency:
-(Would you like to share any kind words or feedback about our agency?)
-
-Communication Experience:
-(How would you describe your experience communicating with us throughout the project?)
-by the way ? did you like the previous form and how do you think this helps the others
-which part do you like the most helpfull?
-
----
+```
+## To be implemented :
+- Attach remaining animations with relevant libaries ie. gsap and framermotion
+- Create components collection page
+- Create showing tags functionalinty in projects section like github ()
+- Create background images from figma 
+- Edit the schema of sanity to be fit for this portfolio 
+- Create animated projects showcase section OR implement 3d cylinder work showcase using threejs
+- Create articles section that should e on the theme of same article section in home page
+- Add a contact page to this design to be completed
+- Attach custom created orbital skills rotate image from figma 
+- Attach 3d icons if nessessary
+- Create frontend first then integrate sanity
+- Organize and maintain the categories in projects create projects details page 

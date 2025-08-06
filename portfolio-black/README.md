@@ -1,48 +1,36 @@
-# Portfolio :
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-### Index :
-- References
-- Updates 
-- To be implemented
+## Getting Started
 
-## References :
-#### Design reference :
-- This portfolio is inspired by [This design](https://www.behance.net/gallery/199132655/Portfolio-Full-stack-Developer?tracking_source=search_projects|developer+portfolio&l=13) Designed by Taisia Tsyganok . See [Taisia Tsyganok on behance](https://www.behance.net/taisia_pro)
+First, run the development server:
 
-#### Tech stack :
-This web app is using Jamstack architecture .
-
-- Frontend : Typescript, TailwindCSS, React.JS
-- Framework : Next.JS
-- Backend : Sanity headless CMS
-
-## API Docs :
-Use this querry to fetch data . 
-```sql
-*[_type == "projects"]{
-  _id,
-  project_name,
-  project_link,
-  project_github_link,
-  project_description,
-  "project_images": project_images[].asset->url,
-  "project_tags": project_tags[]{
-    project_tech_text,
-    "project_tech_image": project_tech_image.asset->url
-  }
-}
-
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
-## To be implemented :
-- Attach remaining animations with relevant libaries ie. gsap and framermotion
-- Create components collection page
-- Create showing tags functionalinty in projects section like github ()
-- Create background images from figma 
-- Edit the schema of sanity to be fit for this portfolio 
-- Create animated projects showcase section OR implement 3d cylinder work showcase using threejs
-- Create articles section that should e on the theme of same article section in home page
-- Add a contact page to this design to be completed
-- Attach custom created orbital skills rotate image from figma 
-- Attach 3d icons if nessessary
-- Create frontend first then integrate sanity
-- Organize and maintain the categories in projects create projects details page 
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

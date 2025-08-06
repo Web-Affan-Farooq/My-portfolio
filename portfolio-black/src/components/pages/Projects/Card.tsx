@@ -1,81 +1,65 @@
+"use client";
+
 import { ArrowUp } from "lucide-react";
 import type { Project } from "@/@types/Projects";
 import Link from "next/link";
 import Image from "next/image";
 
 const Project_card = ({ project }: { project: Project }) => {
-    return (
-        <div className="p-2 sm:p-4 flex flex-col gap-4 w-full max-w-full">
-            {/* Image */}
-            <Image
-                src={project.project_images[0]}
-                alt={project.project_name}
-                width={300}
-                height={300}
-                className="w-full aspect-[4/3] max-sm:aspect-[5/4] object-cover rounded-lg transition-all duration-300 hover:scale-105"
-                quality={100}
-            />
+  return (
+    <div className="relative group md:h-[400px] sm:max-w-5xl w-full mx-auto shadow-lg rounded-2xl overflow-hidden flex flex-row flex-wrap items-center sm:gap-10 max-sm:gap-5 p-6 transition-all duration-300 hover:shadow-2xl max-md:flex-col max-md:items-start">
+      {/* Project Image */}
+      <div className="relative w-[400px] h-[300px] max-sm:w-[300px] max-sm:h-[200px] overflow-hidden rounded-lg">
+        <Image
+          src={project.project_images[0]}
+          alt={`${project.project_name} image`}
+          fill
+          priority
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
 
+      {/* Content */}
+      <div className="flex flex-1 flex-col sm:gap-4 max-sm:gap-3">
+        {/* Project Name */}
+        <h2 className="text-2xl font-semibold text-white max-sm:text-lg font-firacode">
+          {project.project_name}
+        </h2>
 
-            {/* Title */}
-            <h2 className="font-firacode font-semibold text-md text-base sm:text-lg">
-                {project.project_name}
-            </h2>
-
-            {/* Tags */}
-            <div className="flex flex-wrap items-center gap-2">
-                {project.project_tags.map((tag, tagIdx) => (
-                    <Image
-                        key={tagIdx}
-                        src={tag.project_tech_image}
-                        alt={tag.project_tech_text}
-                        width={22}
-                        height={22}
-                        className="object-contain"
-                    />
-                ))}
-            </div>
-
-            {/* Description */}
-            <p className="text-sm text-gray-400">{project.project_description}</p>
-
-            {/* Buttons */}
-            <div className="flex items-center gap-3 flex-wrap">
-                {/* GitHub */}
-                <Link
-                    href={project.project_github_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <button
-                        className="
-                      bg-white-custom text-black font-italic rounded-[40px]
-                      py-[9px] px-5 sm:px-6 text-[12px] sm:text-[14px]
-                      flex items-center gap-2 sm:gap-3 hover:scale-[1.03] transition-all"
-                    >
-                        <Image
-                            src="/icons/github.svg"
-                            alt="github"
-                            width={18}
-                            height={18}
-                            className="w-[18px] h-[18px]"
-                        />
-                        <span>Check my work</span>
-                    </button>
-                </Link>
-
-                {/* Live Link */}
-                <Link
-                    href={project.project_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <button className="bg-white-custom rounded-full p-2 sm:p-2.5 hover:scale-110 transition-transform">
-                        <ArrowUp size={28} className="text-black rotate-90" />
-                    </button>
-                </Link>
-            </div>
+        {/* Explore Button */}
+        <div>
+          <Link href="/" passHref>
+            <button
+              type="button"
+              className="flex items-center gap-2 bg-white text-black text-xs font-medium max-sm:px-4 max-sm:py-[4px] px-4 py-[5px] rounded-full transition"
+            >
+              <i>Explore</i>
+              <ArrowUp className="rotate-90 transition-transform duration-300 group-hover:translate-x-1 max-sm:size-5 size-7" />
+            </button>
+          </Link>
         </div>
-    )
-}
+
+        {/* Tags/Tech Stack */}
+        <div className="flex flex-wrap gap-2">
+          {project.project_tags.map((tag, idx) => (
+            <Image
+              key={idx}
+              src={tag.project_tech_image}
+              alt={tag.project_tech_text}
+              width={25}
+              height={25}
+              className="sm:w-[25px] sm:h-[25px] max-sm:w-[23px] max-sm:h-[23px]"
+            />
+          ))}
+        </div>
+
+        {/* Description */}
+        <p className="text-gray-600 text-sm">
+          {project.project_description}
+        </p>
+      </div>
+    </div>
+  );
+};
+
 export default Project_card;

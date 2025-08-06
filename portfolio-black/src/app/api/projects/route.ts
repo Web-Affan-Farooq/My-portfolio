@@ -20,7 +20,11 @@ const getData = async () => {
 }
 `;
 
-        const response = await sanityClient.fetch(q);
+        const response = await sanityClient.fetch(q,{},{
+          next: {
+            revalidate:60
+          }
+        });
         return response;
 
         // __ attach error handling there

@@ -10,3 +10,4 @@ export {default as ProjectsSection} from "./Projects/Main";
 export {default as ContactSection} from "./Contact/Contact";
 
 export {default as ArticlesSection} from './Articles/Articles'
+export {default as ProjectCard} from "./Projects/Card";
