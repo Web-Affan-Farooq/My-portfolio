@@ -25,12 +25,13 @@
   --font-firacode: var(--firacode);
   --font-opensans: var(--opensans);
   --font-poppins-small: var(--poppins);
+  --breakpoint-project-cards:870px;
   /* --shadow-tag:var(--shadow-tag); */
 }
 
-/* .bg-custom {
+.bg-custom {
   background-image: linear-gradient(rgba(227, 203, 143,0.1) 0%, color-mix(in oklab, var(--color-white)  5%, transparent) 20%);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}

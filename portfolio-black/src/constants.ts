@@ -8,19 +8,19 @@ const testprojects = [
 
             {
                 project_tech_text: "React",
-                project_tech_image: "/icons/react.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Node.JS",
-                project_tech_image: "/icons/node.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Express.JS",
-                project_tech_image: "/icons/express.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Postgresql",
-                project_tech_image: "/icons/postgres.svg"
+                project_tech_image: "/icons/vite.svg"
             },
         ],
         _id: "1",
@@ -35,23 +35,23 @@ const testprojects = [
         project_tags: [
             {
                 project_tech_text: "Typescript",
-                project_tech_image: "/icons/typescript.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Next.JS",
-                project_tech_image: "/icons/next.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "TailwindCSS",
-                project_tech_image: "/icons/tailwindcss.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Prisma",
-                project_tech_image: "/icons/prisma.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Postgresql",
-                project_tech_image: "/icons/postgres.svg"
+                project_tech_image: "/icons/vite.svg"
             },
         ],
         _id: "1",
@@ -66,23 +66,23 @@ const testprojects = [
         project_tags: [
             {
                 project_tech_text: "Next.JS",
-                project_tech_image: "/icons/next.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "TailwindCSS",
-                project_tech_image: "/icons/tailwindcss.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Sanity",
-                project_tech_image: "/icons/sanity.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Stripe",
-                project_tech_image: "/icons/stripe.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Supabase",
-                project_tech_image: "/icons/supabase.svg"
+                project_tech_image: "/icons/vite.svg"
             },
         ],
         _id: "1",
@@ -97,19 +97,19 @@ const testprojects = [
         project_tags: [
             {
                 project_tech_text: "Python",
-                project_tech_image: "/icons/python.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Streamlit",
-                project_tech_image: "/icons/streamlit.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Openai",
-                project_tech_image: "/icons/agents-sdk.svg"
+                project_tech_image: "/icons/vite.svg"
             },
             {
                 project_tech_text: "Postgres",
-                project_tech_image: "/icons/postgres.svg"
+                project_tech_image: "/icons/vite.svg"
             },
         ],
         _id: "1",

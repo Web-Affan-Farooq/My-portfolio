@@ -44,44 +44,18 @@ export default function ProjectsSection() {
                 <section className="relative bg-black text-white py-[80px] px-3 sm:px-6 lg:px-16 overflow-hidden">
                     <div className="max-w-7xl mx-auto">
                         {/* Header */}
-                        <div className="overflow-hidden h-[100px] md:h-[170px] pt-10">
+                        <div className="overflow-hidden h-[100px] md:h-[170px] pt-10 mb-7 mt-4 sm:mb-6 sm:mt-6">
                             <h1 className="project-head px-[20px] text-white-custom font-firacode font-semibold text-right text-[40px] sm:text-[65px] lg:text-[90px] xl:text-[110px] 2xl:text-[120px] leading-none">
                                 My Work
                             </h1>
                         </div>
-                        
-                        <div className="mt-12 flex flex-col gap-[20px]">
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-[20px] max-sm:gap-[100px]">
                             {data.map((project: Project, idx: number) => (
                                 <ProjectCard project={project} key={idx} />
                             ))}
                         </div>
-                        {/* <div className="w-full border border-white h-[500px] overflow-y-auto flex flex-col gap-4 items-center justify-center pt-[15vh] text-white">
-                            <div className="card sticky top-[15vh] bg-blue-400 w-[500px] h-[500px]">
-                                <Image src={"/images/example-project.png"} alt={"example"} width={100} height={100} className="w-[150px]" />
-                                <h1>Hello</h1>
-                            </div>
-                            <div className="card sticky top-[15vh] bg-green-400 w-[500px] h-[500px]">
-                                <Image src={"/images/example-project.png"} alt={"example"} width={100} height={100} className="w-[150px]" />
-                                <h1>Hello</h1>
-                            </div>
-                            <div className="card sticky top-[15vh] bg-blue-400 w-[500px] h-[500px]">
-                                <Image src={"/images/example-project.png"} alt={"example"} width={100} height={100} className="w-[150px]" />
-                                <h1>Hello</h1>
-                            </div>
-                            <div className="card sticky top-[15vh] bg-blue-400 w-[500px] h-[500px]">
-                                <Image src={"/images/example-project.png"} alt={"example"} width={100} height={100} className="w-[150px]" />
-                                <h1>Hello</h1>
-                            </div>
-                            <div className="card sticky top-[15vh] bg-blue-400 w-[500px] h-[500px]">
-                                <Image src={"/images/example-project.png"} alt={"example"} width={100} height={100} className="w-[150px]" />
-                                <h1>Hello</h1>
-                            </div>
-                            <div className="card sticky top-[15vh] bg-blue-400 w-[500px] h-[500px]">
-                                <Image src={"/images/example-project.png"} alt={"example"} width={100} height={100} className="w-[150px]" />
-                                <h1>Hello</h1>
-                            </div>
-                        </div>*/}
-                    </div> 
+                    </div>
                 </section>
             </article>
         </main>
