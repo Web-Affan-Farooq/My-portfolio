@@ -1,0 +1,22 @@
+export default {
+    name:"Message",
+    type:"document",
+    title:"Messages",
+    fields:[
+        {
+            name:"name",
+            type:"string",
+            title:"Name"
+        },
+        {
+            name:"email",
+            type:"string",
+            title:"Email"
+        },
+        {
+            name:"message",
+            type:"string",
+            title:"Message"
+        },
+    ]
+}

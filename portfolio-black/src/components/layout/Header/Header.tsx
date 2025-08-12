@@ -1,11 +1,13 @@
 "use client"
 
-import { Menu ,X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import gsap from 'gsap';
 import clsx from 'clsx';
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react';
 import { useScrollDirection } from "@/components/hooks";
+import { usePathname } from 'next/navigation';
+import { pagesNotAllowed } from '@/constants';
 
 gsap.registerPlugin(useGSAP)
 const Header = () => {
@@ -48,61 +50,59 @@ const Header = () => {
   const handleSideNav = () => {
     setnavStatus(!navStatus)
   }
+  const pathname = usePathname();
 
-  return (
-          <header className='header text-white font-bold z-20 bg-black/4 backdrop-blur-md fixed md:w-[80vw] sm:w-[90vw] max-sm:w-[90vw] rounded-2xl px-[40px] py-[10px] top-[3%] lg:left-[10%] md:left-[10%] sm:left-[5%] max-sm:left-[5%]
+  if (!pagesNotAllowed.includes(pathname)) {
+    return (
+      <header className='header text-white z-20 bg-black/4 backdrop-blur-md fixed md:w-[80vw] sm:w-[90vw] max-sm:w-[90vw] rounded-2xl px-[40px] py-[10px] top-[3%] lg:left-[10%] md:left-[10%] sm:left-[5%] max-sm:left-[5%]
     flex flex-row flex-wrap justify-between items-center 
     max-sm:items-start' ref={headerRef}>
-      <div className='logo text-white font-bold font-firacode
+        <div className='logo text-white font-semibold font-firacode
       text-[25px] 
       2xl:text-[35px]
       xl:text-[33px]
-      lg:text-[31px]
+      lg:text-[31px] 
       '>
-        Affan
-      </div>
+          Affan
+        </div>
 
-      <div className='flex flex-row flex-wrap justify-center items-center 
+        <div className='flex flex-row flex-wrap justify-center items-center 
       2xl:gap-[80px]
       xl:gap-[60px]
       lg:gap-[45px]
       md:gap-[45px]
       sm:gap-[43px]
-      max-sm:hidden'>
-        <a href={"/"} className='nav-options 2xl:text-[20px]'>Home</a>
-        <a href={"/projects"} className='nav-options 2xl:text-[20px]'>Projects</a>
-        <a href={"/"} className='nav-options 2xl:text-[20px]'>Articles</a>
-        <a href={"/contact"} className='nav-options 2xl:text-[20px]'>Contact me</a>
-        {/* <a href={"/"} className='nav-options 2xl:text-[20px]'>About me</a> */}
-      </div>
+      max-sm:hidden font-firacode'>
+          <a href={"/"} className='nav-options 2xl:text-[20px]'>Home</a>
+          <a href={"/projects"} className='nav-options 2xl:text-[20px]'>Projects</a>
+          <a href={"/contact"} className='nav-options 2xl:text-[20px]'>Contact me</a>
+        </div>
 
-      <div className={clsx(`py-[100px] flex-col absolute -top-5 -left-10 bg-black w-[100vw] h-screen flex-wrap justify-center items-center gap-[40px] transition-all duration-400 ease-in-out hidden max-sm:flex`, {
-        "-translate-x-0": navStatus,
-        "-translate-x-[100vw]": !navStatus
-      })}>
-        <X className='text-white sm:hidden block absolute right-10 top-9' onClick={handleSideNav} />
-        <a href={"/"} className='nav-options-mobile' onClick={() => {
-          setnavStatus(!navStatus);
-        }}>Home</a>
-        <a href={"/projects"} className='nav-options-mobile' onClick={() => {
-          setnavStatus(!navStatus);
-        }}>Projects</a>
-        <a href={"/"} className='nav-options-mobile' onClick={() => {
-          setnavStatus(!navStatus);
-        }}>Articles</a>
-        <a href={"/contact"} className='nav-options-mobile' onClick={() => {
-          setnavStatus(!navStatus);
-        }}>Contact me</a>
-        {/* <a href={"/"} className='nav-options-mobile' onClick={() => {
-          setnavStatus(!navStatus);
-        }}>About me</a> */}
-      </div>
+        <div className={clsx(`py-[100px] font-firacode flex-col absolute -top-5 -left-10 bg-black w-[100vw] h-screen flex-wrap justify-center items-center gap-[40px] transition-all duration-400 ease-in-out hidden max-sm:flex`, {
+          "-translate-x-0": navStatus,
+          "-translate-x-[100vw]": !navStatus
+        })}>
+          <X className='text-white sm:hidden block absolute right-10 top-9' onClick={handleSideNav} />
+          <a href={"/"} className='nav-options-mobile' onClick={() => {
+            setnavStatus(!navStatus);
+          }}>Home</a>
+          <a href={"/projects"} className='nav-options-mobile' onClick={() => {
+            setnavStatus(!navStatus);
+          }}>Projects</a>
+          <a href={"/contact"} className='nav-options-mobile' onClick={() => {
+            setnavStatus(!navStatus);
+          }}>Contact me</a>
+        </div>
 
-      <Menu className='text-white sm:hidden block absolute right-4 top-4' onClick={handleSideNav} />
+        <Menu className='text-white sm:hidden block absolute right-4 top-4' onClick={handleSideNav} />
 
-      {/* <div className='md:block hidden'></div> */}
-    </header>
-  )
+        {/* <div className='md:block hidden'></div> */}
+      </header>
+    )
+  }
+  else {
+    return <></>
+  }
 }
 
 export default Header;

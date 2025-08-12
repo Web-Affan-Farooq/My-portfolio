@@ -1,7 +1,12 @@
+"use client"
+import { pagesNotAllowed } from "@/constants";
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const Footer = () => {
-  return (
+  const pathname = usePathname();
+  if(!pagesNotAllowed.includes(pathname)){
+      return (
     <>
       <footer className='pt-[100px] flex flex-row max-sm:flex-col flex-wrap justify-evenly items-center bg-black'>
         <div className='text-right p-7'>
@@ -58,6 +63,10 @@ const Footer = () => {
       </div>
     </>
   )
+  }
+  else {
+    return <></>
+  }
 }
 
 export default Footer

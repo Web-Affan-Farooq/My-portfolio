@@ -13,7 +13,6 @@ const HeroText = () => {
         // GSap animation for mobile and smaller screens 
         gsap.fromTo(".banner-mobile", { opacity: 0, y: 100, duration: 0.8, stagger: 0.3 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.3 });
 
-
     });
     return (
         <section className='w-full'>

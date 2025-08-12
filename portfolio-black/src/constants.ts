@@ -119,6 +119,11 @@ const testprojects = [
 
 ];
 
+const pagesNotAllowed = [
+    "/contact/success",
+    "/contact/failure",
+]
 export {
-    testprojects
+    testprojects,
+    pagesNotAllowed
 }

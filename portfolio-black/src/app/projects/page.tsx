@@ -28,7 +28,7 @@ export default function ProjectsSection() {
         const getData = async () => {
             const response = await axios.get("/api/projects");
             const { data } = await response.data;
-            console.log("Data : ", data);
+            // console.log("Data : ", data);
             if (data !== "Error while creating connection") {
                 setdata(data)
             }
