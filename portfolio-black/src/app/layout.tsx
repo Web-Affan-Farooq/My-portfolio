@@ -16,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`font-opensans bg-black text-light-gray`}
-      >
+      <body className={`font-opensans bg-black text-light-gray`}>
         <SlidingWindow>
           <HeaderVisibilityContextProvider>
             <Header />

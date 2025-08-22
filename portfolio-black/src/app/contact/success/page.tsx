@@ -8,7 +8,7 @@ const ContactSuccessPage = () => {
       <article className="rounded-2xl max-w-lg w-full p-8 text-center">
         {/* Success Icon */}
         <CheckCircle className="text-faun mx-auto mb-4" size={60} />
-        
+
         {/* Main Message */}
         <h1 className="text-2xl font-bold text-gray-200 mb-2">
           Message Sent Successfully!
@@ -29,7 +29,7 @@ const ContactSuccessPage = () => {
           {[
             { href: "/", label: "...  /About me ..." },
             { href: "/contact", label: "...  /Contact me ..." },
-            { href: "/projects", label: "...  /My Work ..." }
+            { href: "/projects", label: "...  /My Work ..." },
           ].map((link, i) => (
             <Link
               key={i}

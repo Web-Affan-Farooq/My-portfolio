@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import sanityClient from "@/lib/sanity";
-import { Skills ,SkillsData} from "@/@types/Skills";
+import { Skills, SkillsData } from "@/@types/Skills";
 
 export const GET = async () => {
-    const q = `*[_type == "Skills" && active]{
+  const q = `*[_type == "Skills" && active]{
   _id,
     domain,
     name,
@@ -15,21 +15,21 @@ logo {
   }
 }`;
 
-    const response = await sanityClient.fetch(q, {}, {
-        next: {
-            revalidate: 60,
-        }
-    });
+  const response = await sanityClient.fetch(q);
 
-    const data:SkillsData = {
-        'Fullstack':response.filter((skill:Skills) => (skill.domain.toLowerCase().trim() === "fullstack")),
-        'Devops':response.filter((skill:Skills) => (skill.domain.toLowerCase().trim() === "devops")),
-        'AI':response.filter((skill:Skills) => (skill.domain.toLowerCase().trim() === "ai")),
-    }
+  const data: SkillsData = {
+    Fullstack: response.filter(
+      (skill: Skills) => skill.domain.toLowerCase().trim() === "fullstack"
+    ),
+    Devops: response.filter(
+      (skill: Skills) => skill.domain.toLowerCase().trim() === "devops"
+    ),
+    AI: response.filter(
+      (skill: Skills) => skill.domain.toLowerCase().trim() === "ai"
+    ),
+  };
 
-    return NextResponse.json(
-        {
-            skills: data,
-        }
-    )
-}
+  return NextResponse.json({
+    skills: data,
+  });
+};

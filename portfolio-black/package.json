@@ -22,7 +22,11 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-hook-form": "^7.62.0",
-    "zod": "^4.0.17"
+    "react-markdown": "^10.1.0",
+    "rehype-prism-plus": "^2.0.1",
+    "remark-gfm": "^4.0.1",
+    "zod": "^4.0.17",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -32,6 +36,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
+    "prettier": "^3.6.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
