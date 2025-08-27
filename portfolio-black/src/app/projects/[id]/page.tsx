@@ -12,7 +12,7 @@ const DynamicCasePage = () => {
   const { projects } = useProjects();
   const requiredProject = useMemo(() => {
     return projects.find((project) => project._id === id);
-  }, [projects]);
+  }, [projects, id]);
 
   if (!requiredProject) {
     router.push("/projects");
@@ -24,25 +24,25 @@ const DynamicCasePage = () => {
             <Markdown
               remarkPlugins={[remarkGfm]}
               components={{
-                h1: ({ node, ...props }) => (
+                h1: ({ ...props }) => (
                   <h1
                     className="text-2xl font-bold font-firacode mb-6 text-white"
                     {...props}
                   />
                 ),
-                h2: ({ node, ...props }) => (
+                h2: ({ ...props }) => (
                   <h2
                     className="text-xl font-bold font-firacode mb-6 text-white"
                     {...props}
                   />
                 ),
-                p: ({ node, ...props }) => (
+                p: ({ ...props }) => (
                   <p
                     className="text-gray-700 leading-relaxed mb-4"
                     {...props}
                   />
                 ),
-                a: ({ node, ...props }) => (
+                a: ({ ...props }) => (
                   <a
                     className="text-blue-600 hover:text-blue-800 underline"
                     target="_blank"
@@ -50,7 +50,7 @@ const DynamicCasePage = () => {
                     {...props}
                   />
                 ),
-                code: ({ node, className, children, ...props }) => (
+                code: ({ children, ...props }) => (
                   // inline ? (
                   //   <code
                   //     className="bg-gray-200 text-pink-600 px-1 py-0.5 rounded"
@@ -63,13 +63,13 @@ const DynamicCasePage = () => {
                     <code {...props}>{children}</code>
                   </pre>
                 ),
-                blockquote: ({ node, ...props }) => (
+                blockquote: ({ ...props }) => (
                   <blockquote
                     className="border-l-4 border-indigo-400 pl-4 italic text-gray-600 my-4"
                     {...props}
                   />
                 ),
-                ul: ({ node, ...props }) => (
+                ul: ({ ...props }) => (
                   <ul
                     className="list-disc list-inside space-y-2 text-gray-700"
                     {...props}

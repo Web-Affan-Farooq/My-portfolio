@@ -1,5 +1,5 @@
-// import { HeroSection, AboutSection, SkillsSection, ServicesSection, ExperienceSection } from "./components/pages"
-import { ProjectsSection } from "./components/pages"
+import { HeroSection, AboutSection, SkillsSection, ServicesSection, ExperienceSection } from "./components/pages"
+// import { ProjectsSection } from "./components/pages"
 // import { ContactSection } from "./components/pages"
 
 import Lenis from "lenis";
@@ -19,12 +19,12 @@ const App = () => {
 
   return (
     <div className="bg-black w-full h-full">
-      {/* <HeroSection /> */}
-      {/* <AboutSection /> */}
-      {/* <SkillsSection /> */}
-      {/* <ServicesSection /> */}
-      {/* <ExperienceSection /> */}
-      <ProjectsSection />
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <ServicesSection />
+      <ExperienceSection />
+      {/* <ProjectsSection /> */}
       {/* <ContactSection /> */}
     </div>
   )

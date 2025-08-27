@@ -20,20 +20,21 @@ const MainAbout = () => {
       <div className="flex flex-row max-sm:flex-col justify-between lg:justify-evenly items-center gap-10 p-6">
         <div className="sm:w-1/2 md:w-1/2">
           <p className="text-gray-400 max-sm:w-full">
-            I'm <em className="text-white">Muhammad Affan</em>, a
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            I'm <em className="text-white"> Muhammad Affan </em>, a
             <span className="text-white font-semibold">
               full-stack developer
             </span>
             based in
-            <b className="text-white font-semibold"> Pakistan</b> with a passion
-            for building clean, scalable, and efficient software solutions. I
-            have a solid understanding of{" "}
-            <span className="text-white">software design</span> and{" "}
-            <span className="text-white">architecture</span>, and I love turning
-            complex problems into elegant code. With strong capabilities, I am
-            specializing in creating seamless user experiences and robust
-            backend logic. I'm always exploring new technologies and sharpening
-            my problem-solving abilities.
+            <b className="text-white font-semibold"> Pakistan </b> with a
+            passion for building clean, scalable, and efficient software
+            solutions. I have a solid understanding of
+            <span className="text-white"> software design </span> and
+            <span className="text-white"> architecture </span>, and I love
+            turning complex problems into elegant code. With strong
+            capabilities, I am specializing in creating seamless user
+            experiences and robust backend logic. I am always exploring new
+            technologies and sharpening my problem-solving abilities.
           </p>
           <br />
           {/* <a href={"/projects"} className='flex items-center gap-2 border border-white'> */}
@@ -62,9 +63,6 @@ const MainAbout = () => {
   );
 };
 
-const TestAbout = () => {
-  return <section className="border border-white w-full"></section>;
-};
 const About = () => {
   return (
     <section className="w-full">

@@ -32,7 +32,7 @@ export default function ProjectsSection() {
       }
     };
     getData();
-  }, []);
+  }, [setProjects]);
 
   // _____ Reveal from bottom animation on my work heading ...
   useGSAP(() => {

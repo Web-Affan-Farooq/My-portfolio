@@ -33,3 +33,16 @@ Use this querry to fetch data .
 }
 
 ```
+## To be implemented :
+- Attach remaining animations with relevant libaries ie. gsap and framermotion
+- Create components collection page
+- Create showing tags functionalinty in projects section like github ()
+- Create background images from figma 
+- Edit the schema of sanity to be fit for this portfolio 
+- Create animated projects showcase section OR implement 3d cylinder work showcase using threejs
+- Create articles section that should e on the theme of same article section in home page
+- Add a contact page to this design to be completed
+- Attach custom created orbital skills rotate image from figma 
+- Attach 3d icons if nessessary
+- Create frontend first then integrate sanity
+- Organize and maintain the categories in projects create projects details page 
