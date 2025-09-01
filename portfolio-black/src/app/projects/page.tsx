@@ -10,29 +10,11 @@ import { ProjectCard } from "@/components/pages";
 
 /* ____ Types ... */
 import { Project } from "@/@types/Projects";
-import { useEffect, useState } from "react";
 import { useProjects } from "@/stores/projects";
 // import { testprojects } from "@/constants";
 
 export default function ProjectsSection() {
-  const [projects, setProjectsData] = useState<Project[]>([]);
-  const { setProjects } = useProjects();
-  useEffect(() => {
-    // ___Fetch data from API and update the content
-    const getData = async () => {
-      const response = await fetch(`/api/projects`, {
-        next: { revalidate: 600 },
-      });
-      const { data } = await response.json();
-
-      if (data !== "Error while creating connection") {
-        setProjectsData(data);
-        setProjects(data);
-      } else {
-      }
-    };
-    getData();
-  }, [setProjects]);
+  const { projects } = useProjects();
 
   // _____ Reveal from bottom animation on my work heading ...
   useGSAP(() => {

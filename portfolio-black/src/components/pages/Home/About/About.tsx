@@ -20,7 +20,6 @@ const MainAbout = () => {
       <div className="flex flex-row max-sm:flex-col justify-between lg:justify-evenly items-center gap-10 p-6">
         <div className="sm:w-1/2 md:w-1/2">
           <p className="text-gray-400 max-sm:w-full">
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
             I'm <em className="text-white"> Muhammad Affan </em>, a
             <span className="text-white font-semibold">
               full-stack developer
