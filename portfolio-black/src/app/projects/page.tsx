@@ -50,12 +50,23 @@ export default function ProjectsSection() {
         <section className="relative bg-black text-white py-[80px] px-3 sm:px-6 lg:px-16 overflow-hidden">
           <div className="max-w-7xl mx-auto">
             {/* Header */}
-            <div className="overflow-hidden h-[100px] md:h-[170px] pt-10 mb-7 mt-4 sm:mb-6 sm:mt-6">
-              <h1 className="project-head px-[20px] text-white-custom font-firacode font-semibold text-right text-[40px] sm:text-[65px] lg:text-[90px] xl:text-[110px] 2xl:text-[120px] leading-none">
-                My Work
-              </h1>
-            </div>
 
+                  <div className="2xl:w-[85vw] 2xl:px-20 xl:w-[85vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] mx-auto font-firacode py-[100px]">
+        <h1
+          className="text-5xl md:text-7xl font-bold px-5 m-auto text-white-custom text-left w-full font-firacode 
+                    2xl:text-[110px]
+                    xl:text-[100px]
+                    lg:text-[80px] 
+                    md:text-[57px]
+                    sm:text-[40px]
+                    max-sm:text-[30px]"
+        >
+          My Work
+        </h1>
+        <p className="text-gray-400 mt-2 mx-8 max-sm:mx-5 ">
+          Projects I've worked on 
+        </p>
+      </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-[20px] max-sm:gap-[100px]">
               {projects.map((project: Project, idx: number) => (
                 <ProjectCard project={project} key={idx} />
