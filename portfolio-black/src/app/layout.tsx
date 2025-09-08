@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Header, Footer, SlidingWindow } from "@/components/layout";
-import HeaderVisibilityContextProvider from "@/context/HeaderContext";
 
 export const metadata: Metadata = {
   title: "Muhammad Affan",
@@ -18,11 +17,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-opensans bg-black text-light-gray`}>
         <SlidingWindow>
-          <HeaderVisibilityContextProvider>
-            <Header />
-            {children}
-            <Footer />
-          </HeaderVisibilityContextProvider>
+          <Header />
+          {children}
+          <Footer />
         </SlidingWindow>
       </body>
     </html>

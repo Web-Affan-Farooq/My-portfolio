@@ -13,6 +13,7 @@ const getData = async () => {
   project_github_link,
   project_description,
   project_casestudy,
+  status,
   "project_images": project_images[].asset->url,
   "project_tags": project_tags[]{
     project_tech_text,

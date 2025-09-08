@@ -11,7 +11,7 @@ const Footer = () => {
   } else {
     return (
       <>
-        <footer className="pt-[100px] flex flex-row max-sm:flex-col flex-wrap justify-evenly items-center bg-black">
+        <footer className="selection:text-black selection:bg-faun pt-[100px] flex flex-row max-sm:flex-col flex-wrap justify-evenly items-center bg-black">
           <div className="text-right p-7">
             <h1
               className="text-white-custom
@@ -71,7 +71,7 @@ const Footer = () => {
           <br />
         </footer>
 
-        <div className="p-[30px] bg-black text-white">
+        <div className="p-[30px] bg-black text-white selection:bg-faun selection:text-black">
           &copy; Muhammad Affan | All rights reserved
         </div>
       </>

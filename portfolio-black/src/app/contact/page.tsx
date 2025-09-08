@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <main className="bg-black text-white py-40">
+    <main className="selection:bg-faun selection:text-black bg-black text-white py-40">
       <article className="max-w-4xl mx-auto px-6">
         <section>
           {/* Section Header */}

@@ -6,7 +6,6 @@ interface Skills {
       url:string;
     }
   }
-  active:boolean
 }
 
 type SkillsData = Record<string,Skills[]> 

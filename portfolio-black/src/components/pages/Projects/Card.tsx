@@ -1,13 +1,13 @@
 "use client";
 
-import { Globe } from "lucide-react";
+import { Globe, BookOpen } from "lucide-react";
 import type { Project } from "@/@types/Projects";
 import Link from "next/link";
 import Image from "next/image";
 
 const Project_card = ({ project }: { project: Project }) => {
   return (
-    <div className="w-full sm:max-w-md mx-auto overflow-hidden rounded-xl shadow-md ">
+    <div className="w-full sm:max-w-md mx-auto overflow-hidden rounded-xl shadow-md selection:bg-faun selection:text-black">
       <div className="flex flex-col gap-[20px]">
         <div className="w-full h-[200px] rounded-xl">
           <Image
@@ -22,7 +22,6 @@ const Project_card = ({ project }: { project: Project }) => {
           <div className="text-xs font-bold tracking-wide text-gray-700 uppercase">
             {project.project_category}
           </div>
-
           <h1 className="mt-1 block text-lg leading-tight font-normal font-firacode text-[#e3cb8f]">
             {project.project_name}
           </h1>
@@ -41,34 +40,29 @@ const Project_card = ({ project }: { project: Project }) => {
           <p className="mt-2 text-gray-500 text-sm font-firacode">
             {project.project_description}
           </p>
-
           <div className="flex justify-end flex-row flex-nowrap gap-[10px] pt-3">
-            <Link href={`/projects/${project._id}`}>
-              <button
-                type="button"
-                className="text-sm px-[20px] py-[5px] hover:bg-white transition-all duration-200 hover:text-black text-white rounded-lg"
-              >
-                Case study
-              </button>
+            <Link href={"#"}>
+              <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20">
+                <BookOpen className="w-[15px] h-[15px] stroke-faun rounded-full w-[15px] h-[15px]" />
+              </div>
             </Link>
-            <Link
-              href={project.project_github_link}
-              className="bg-white w-[25px] h-[25px] flex justify-center items-center rounded-full"
-            >
-              <Image
-                src={"/icons/github.svg"}
-                alt="github link"
-                width={30}
-                height={30}
-                className="rounded-full w-[15px] h-[15px]"
-              />
+
+            <Link href={project.project_github_link}>
+              <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20">
+                <Image
+                  src={"/icons/github.svg"}
+                  alt="Muhammad affan"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px] transition-all duration-1000 ease"
+                />
+              </div>
             </Link>
-            <Link
-              href={project.project_link}
-              className="bg-white w-[25px] h-[25px] flex justify-center items-center rounded-full"
-            >
-              {/* <Image src={"/icons/github.svg"} alt="github link" width={30} height={30} className="rounded-full w-[20px] h-[20px]"/> */}
-              <Globe className="stroke-black rounded-full w-[15px] h-[15px]" />
+
+            <Link href={project.project_link}>
+              <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20">
+                <Globe className="w-[15px] h-[15px] stroke-faun rounded-full w-[15px] h-[15px]" />
+              </div>
             </Link>
           </div>
         </div>

@@ -1,3 +1,6 @@
+import Skills from "./skills.json";
+const testSkills = Skills;
+
 const testprojects = [
   {
     project_category: "Fullstack",
@@ -50,4 +53,4 @@ const testprojects = [
 ];
 
 const pagesNotAllowed = ["/contact/success", "/contact/failure", "/casestudy"];
-export { testprojects, pagesNotAllowed };
+export { testprojects, pagesNotAllowed , testSkills};
