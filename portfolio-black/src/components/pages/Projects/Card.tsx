@@ -2,6 +2,7 @@
 
 import { Globe, BookOpen } from "lucide-react";
 import type { Project } from "@/@types/Projects";
+// _____ Components ...
 import Link from "next/link";
 import Image from "next/image";
 
@@ -42,13 +43,13 @@ const Project_card = ({ project }: { project: Project }) => {
           </p>
           <div className="flex justify-end flex-row flex-nowrap gap-[10px] pt-3">
             <Link href={"#"}>
-              <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20">
+              <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20 hover:bg-gray-700 transition-all duration-300 ease-in-out">
                 <BookOpen className="w-[15px] h-[15px] stroke-faun rounded-full w-[15px] h-[15px]" />
               </div>
             </Link>
 
             <Link href={project.project_github_link}>
-              <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20">
+              <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20 hover:bg-gray-700 transition-all duration-300 ease-in-out">
                 <Image
                   src={"/icons/github.svg"}
                   alt="Muhammad affan"
@@ -60,7 +61,7 @@ const Project_card = ({ project }: { project: Project }) => {
             </Link>
 
             <Link href={project.project_link}>
-              <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20">
+              <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20 hover:bg-gray-700 transition-all duration-300 ease-in-out">
                 <Globe className="w-[15px] h-[15px] stroke-faun rounded-full w-[15px] h-[15px]" />
               </div>
             </Link>

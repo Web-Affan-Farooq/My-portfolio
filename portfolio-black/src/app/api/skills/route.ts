@@ -1,21 +1,11 @@
 import { NextResponse } from "next/server";
 import sanityClient from "@/lib/sanity";
 import { Skills, SkillsData } from "@/@types/Skills";
+import { skillsQuery } from "@/queries";
 
 export const GET = async () => {
-  const q = `*[_type == "Skills" && active]{
-  _id,
-    domain,
-    name,
-logo {
-    asset-> {
-      _id,
-      url
-    }
-  }
-}`;
 
-  const response = await sanityClient.fetch(q);
+  const response = await sanityClient.fetch(skillsQuery);
 
   const data: SkillsData = {
     Fullstack: response.filter(
