@@ -15,17 +15,6 @@ import { useProjects } from "@/stores/projects";
 
 export default function ProjectsSection() {
   const { projects } = useProjects();
-
-  // _____ Reveal from bottom animation on my work heading ...
-  // useGSAP(() => {
-  //   // GSAP animation for desktop and tablets
-  //   gsap.fromTo(
-  //     ".project-head",
-  //     { opacity: 0, y: 100, duration: 0.8, stagger: 0.3 },
-  //     { opacity: 1, y: 0, duration: 0.8, stagger: 0.3 }
-  //   );
-  // });
-
   return (
     <main>
       <article>

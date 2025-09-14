@@ -8,67 +8,137 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const MainAbout = () => {
+  // useGSAP(() => {
+  //   // ____ animate content ...
+  //   const text = document.querySelectorAll(".content");
+  //   gsap.fromTo(
+  //     text,
+  //     {
+  //       y: 100,
+  //       opacity: 0,
+  //     },
+  //     {
+  //       y: 0,
+  //       opacity: 1,
+  //       stagger: 0.002,
+  //       scrollTrigger: {
+  //         trigger: text[0],
+  //         start: "top center",
+  //         end: "top 60%",
+  //       },
+  //     }
+  //   );
+
+  //   // ____ animate headline ...
+  //   const headLine = document.querySelector(".head-line");
+  //   gsap.fromTo(
+  //     headLine,
+  //     {
+  //       y: 100,
+  //       opacity: 0,
+  //     },
+  //     {
+  //       y: 0,
+  //       opacity: 1,
+  //       stagger: 0.002,
+  //       scrollTrigger: {
+  //         trigger: headLine,
+  //         start: "top center",
+  //         end: "top 60%",
+  //       },
+  //     }
+  //   );
+
+  //   // ____ animate heading ...
+  //   const aboutHeading = document.querySelector(".about-head");
+  //   gsap.fromTo(
+  //     aboutHeading,
+  //     {
+  //       opacity: 0,
+  //       y: 100,
+  //       duration: 0.8,
+  //       stagger: 0.3,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 0.8,
+  //       delay: 0.8,
+  //       // stagger: 0.8,
+  //       scrollTrigger: {
+  //         trigger: aboutHeading,
+  //         start: "top center",
+  //         end: "top 60%",
+  //       },
+  //     }
+  //   );
+  // }, []);
+
   useGSAP(() => {
-    // ____ animate content ...
+    // ____ animate content (paragraph letters) ...
     const text = document.querySelectorAll(".content");
     gsap.fromTo(
       text,
       {
-        y: 100,
+        y: 40,
         opacity: 0,
       },
       {
         y: 0,
         opacity: 1,
-        stagger: 0.002,
+        ease: "power3.out",
+        duration: 1,
+        stagger: 0.03,
         scrollTrigger: {
           trigger: text[0],
-          start: "top center",
-          end: "top 60%",
+          start: "top 80%",
+          end: "top 50%",
+          scrub: true,
         },
       }
     );
 
-    // ____ animate headline ...
+    // ____ animate headline (small text) ...
     const headLine = document.querySelector(".head-line");
     gsap.fromTo(
       headLine,
       {
-        y: 100,
+        y: 40,
         opacity: 0,
       },
       {
         y: 0,
         opacity: 1,
-        stagger: 0.002,
+        ease: "power3.out",
+        duration: 1,
+        delay: 0.3,
         scrollTrigger: {
           trigger: headLine,
-          start: "top center",
-          end: "top 60%",
+          start: "top 85%",
+          end: "top 55%",
+          scrub: true,
         },
       }
     );
 
-    // ____ animate heading ...
+    // ____ animate heading (big "About me") ...
     const aboutHeading = document.querySelector(".about-head");
     gsap.fromTo(
       aboutHeading,
       {
+        y: 60,
         opacity: 0,
-        y: 100,
-        duration: 0.8,
-        stagger: 0.3,
       },
       {
-        opacity: 1,
         y: 0,
-        duration: 0.8,
-        delay: 0.8,
-        // stagger: 0.8,
+        opacity: 1,
+        ease: "power3.out",
+        duration: 1.2,
         scrollTrigger: {
           trigger: aboutHeading,
-          start: "top center",
+          start: "top 90%",
           end: "top 60%",
+          scrub: true,
         },
       }
     );

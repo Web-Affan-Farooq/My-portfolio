@@ -154,4 +154,18 @@ const testSkills = {
         }
     ]
 }
-export { testprojects, pagesNotAllowed, testSkills };
+
+const footerLinks = [
+  {
+    name:"... / About me ...",
+    url:"/"
+  },
+  {
+     name:"... / Contact me ...",
+     url:"/contact"
+  },{
+    name:"... / My work ...",
+    url:"/projects"
+  }
+]
+export { testprojects, pagesNotAllowed, testSkills , footerLinks };

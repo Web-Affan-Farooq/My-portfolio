@@ -42,7 +42,7 @@ const Project_card = ({ project }: { project: Project }) => {
             {project.project_description}
           </p>
           <div className="flex justify-end flex-row flex-nowrap gap-[10px] pt-3">
-            <Link href={"#"}>
+            <Link href={`/projects/${project._id}`}>
               <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20 hover:bg-gray-700 transition-all duration-300 ease-in-out">
                 <BookOpen className="w-[15px] h-[15px] stroke-faun rounded-full w-[15px] h-[15px]" />
               </div>
