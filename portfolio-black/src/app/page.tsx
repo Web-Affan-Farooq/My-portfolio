@@ -8,7 +8,7 @@ import {
 const Home = () => {
   return (
     <main>
-      <article className="flex flex-col flex-nowrap justify-center items-center gap-[100px]">
+      <article className="max-sm:pt-[120px] sm:pt-[140px] flex flex-col flex-nowrap justify-center items-center gap-[100px]">
         <HeroSection />
         <AboutSection />
         <SkillsSection />

@@ -3,11 +3,12 @@ import { ArrowUp } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import Link from "next/link";
 
 // ____must regiter the gsap plugin ...
 gsap.registerPlugin(ScrollTrigger);
 
-const MainAbout = () => {
+const About = () => {
   // useGSAP(() => {
   //   // ____ animate content ...
   //   const text = document.querySelectorAll(".content");
@@ -138,7 +139,6 @@ const MainAbout = () => {
           trigger: aboutHeading,
           start: "top 90%",
           end: "top 60%",
-          scrub: true,
         },
       }
     );
@@ -151,35 +151,25 @@ const MainAbout = () => {
             specializing in creating seamless user experiences and robust
             backend logic. I'm always exploring new technologies and sharpening
             my problem-solving abilities.`;
-  return (
-    <>
-      <div className="2xl:w-[85vw] 2xl:px-20 xl:w-[85vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] mx-auto flex flex-row flex-nowrap justify-between items-center ">
-        <div className="2xl:w-[85vw] 2xl:px-20 xl:w-[85vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] mx-auto">
-          <div className="h-[80px] overflow-hidden">
-            <h1
-              className="text-5xl md:text-7xl font-bold px-5 m-auto text-white-custom text-left w-full font-firacode 
-                    2xl:text-[110px]
-                    xl:text-[100px]
-                    lg:text-[80px] 
-                    md:text-[57px]
-                    sm:text-[40px]
-                    max-sm:text-[30px] about-head"
-            >
-              About me
-            </h1>
-          </div>
 
-          <div className="h-[30px] overflow-hidden">
-            <p className="font-firacode text-faun mt-2 mx-5 text-sm text-faun head-line">
-              Here is the little about me and what i bring to the table
-            </p>
-          </div>
+  return (
+    <section className="2xl:w-[85vw] sm:p-[18px]">
+      <div className="px-[50px] max-md:px-[20px] max-sm:px-[0px] flex max-md:flex-col items-start justify-evenly items-center">
+        <div>
+          <h1 className="about-head text-green-light w-full font-firacode font-bold text-5xl text-left max-sm:text-[30px] sm:text-[40px] md:text-[57px] lg:text-[80px] xl:text-[100px] 2xl:text-[110px] about-head">
+            About me
+          </h1>
+          <p className="font-firacode text-faun text-left text-sm mt-2 mx-1">
+            Here is the little about me and what i bring to the table
+          </p>
         </div>
+        <div className="w-1/2"></div>
       </div>
+
       <br />
 
-      <div className="flex flex-col gap-10 p-6 2xl:w-[85vw] 2xl:px-20 xl:w-[85vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] mx-auto">
-        <p className="text-gray-400 max-sm:w-full font-firacode">
+      <div className="flex flex-col gap-10 mx-auto px-[50px] max-md:px-[20px] max-sm:px-[0px]">
+        <p className="text-gray-400 max-sm:text-sm max-sm:w-full font-firacode">
           {aboutContent.split("").map((char, idx) => (
             <span key={idx} className="content text-sm">
               {char}
@@ -187,25 +177,15 @@ const MainAbout = () => {
           ))}
         </p>
 
-        <div className="flex flex-row flex-nowrap">
-          <button className="bg-white-custom rounded-[40px] text-black lg:px-[100px] md:px-[80px] sm:px-[40px] max-sm:px-[30px] py-[13px]">
+        <Link href={"/projects"} className="flex items-center gap-2">
+          <button className="bg-custom rounded-[40px] lg:px-[100px] md:px-[80px] sm:px-[50px] sm:py-[13px] max-sm:px-[30px] max-sm:py-[8px]">
             <i>Download CV</i>
           </button>
-
-          <button className="text-center flex justify-center items-center bg-white-custom rounded-full w-[50px] h-[50px]">
-            <ArrowUp size={35} className="font-bold rotate-90" />
+          <button className="text-center flex justify-center items-center bg-green-light rounded-full sm:w-[40px] sm:h-[40px] max-sm:w-[30px] max-sm:h-[30px]">
+            <ArrowUp className="md:font-bold rotate-90 text-black sm:text-xl max-sm:size-4" />
           </button>
-        </div>
+        </Link>
       </div>
-    </>
-  );
-};
-
-const About = () => {
-  return (
-    <section className="w-full selection:bg-faun selection:text-black">
-      <MainAbout />
-      <div className="h-[100px]"></div>
     </section>
   );
 };

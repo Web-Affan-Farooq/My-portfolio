@@ -10,31 +10,31 @@ const ServicesData = [
     name: "Frontend Development",
     specs:
       "Crafting stunning, responsive, and interactive user interfaces using modern frameworks like React and Next.js.",
-    icon: <LayoutPanelLeft size={25} />,
+    icon: <LayoutPanelLeft size={25} className="stroke-green-light" />,
   },
   {
     name: "Fullstack Development",
     specs:
       "Building robust and scalable full-stack web applications from concept to deployment.",
-    icon: <Server size={25} />,
+    icon: <Server size={25} className="stroke-green-light" />,
   },
   {
     name: "AI Integration",
     specs:
       "Integrating cutting-edge AI functionalities into your products using APIs from OpenAI and other leading platforms.",
-    icon: <Brain size={25} />,
+    icon: <Brain size={25} className="stroke-green-light" />,
   },
   {
     name: "Chatbot Development",
     specs:
       "Developing intelligent and conversational chatbots to automate customer support, sales, and internal processes.",
-    icon: <Bot size={25} />,
+    icon: <Bot size={25} className="stroke-green-light" />,
   },
   {
     name: "JAMstack Development",
     specs:
       "Creating high-performance, secure, and scalable static websites leveraging the JAMstack architecture.",
-    icon: <Globe size={25} />,
+    icon: <Globe size={25} className="stroke-green-light" />,
   },
 ];
 
@@ -102,26 +102,17 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="text-white selection:bg-faun selection:text-black">
-      <div className="2xl:w-[85vw] 2xl:px-20 xl:w-[85vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] mx-auto">
-        <div className="h-[80px] overflow-hidden">
-          <h1
-            className="services-head text-5xl md:text-7xl font-bold px-5 m-auto text-white-custom text-left w-full font-firacode 
-              2xl:text-[110px]
-              xl:text-[100px]
-              lg:text-[80px] 
-              md:text-[57px]
-              sm:text-[40px]
-              max-sm:text-[30px]"
-          >
+    <div>
+      <div className="px-[50px] max-md:px-[20px] flex max-md:flex-col items-start justify-evenly items-center">
+        <div>
+          <h1 className="text-green-light w-full font-firacode font-bold text-5xl text-left max-sm:text-[30px] sm:text-[40px] md:text-[57px] lg:text-[80px] xl:text-[100px] 2xl:text-[110px] about-head">
             Services
           </h1>
-        </div>
-        <div className="h-[30px] overflow-hidden">
-          <p className="head-line-services font-firacode text-faun mt-2 mx-5 text-sm">
-            Here's how I can help your business succeed.
+          <p className="font-firacode text-faun text-left text-sm mt-2 mx-1 head-line">
+            Here's How can I help you in your business
           </p>
         </div>
+        <div className="w-1/2"></div>
       </div>
       <br />
 

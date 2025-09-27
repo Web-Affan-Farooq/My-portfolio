@@ -9,11 +9,11 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --white-color: #F5F5F5;
+  --green-color: #a8e9b4;
   --black-color: #121212;
+  --faun:#e3cb8f;
   --dark-gray: #3D3D3D;
   --light-gray: #A6A6A6;
-  --faun:#e3cb8f;
   --firacode: "Fira Code", monospace;
   --opensans: "Open Sans", sans-serif;
   --poppins: "Poppins", sans-serif;
@@ -57,8 +57,9 @@
 @theme inline {
   --color-light-gray: var(--light-gray);
   --color-dark-gray: var(--dark-gray);
+  --color-faun:var(--faun)
   --color-black-custom: var(--black-color);
-  --color-white-custom: var(--white-color);
+  --color-green-light: var(--green-color);
   --font-firacode: var(--firacode);
   --font-opensans: var(--opensans);
   --font-poppins-small: var(--poppins);
@@ -144,10 +145,16 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+  b, strong {
+    @apply font-bold text-green-light
+  }
+  i, em {
+    @apply text-[#e3cb81] max-sm:text-sm
   }
   body {
     @apply bg-background text-foreground;
+  }
+  section {
+    @apply selection:bg-green-light selection:text-black 2xl:w-[85vw] p-[18px]
   }
 }

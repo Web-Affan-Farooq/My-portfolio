@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Header, Footer, SlidingWindow } from "@/components/layout";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Muhammad Affan",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-opensans bg-black text-light-gray`}>
         <SlidingWindow>
+          <Toaster />
           <Header />
           {children}
           <Footer />

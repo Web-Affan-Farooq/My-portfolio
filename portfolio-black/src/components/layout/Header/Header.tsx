@@ -96,24 +96,32 @@ const Header = () => {
   } else {
     return (
       <header
-        className="selection:bg-faun selection:text-black header text-white z-20 bg-black/4 backdrop-blur-md fixed md:w-[90vw] max-md:w-[90vw] rounded-2xl px-[40px] py-[10px] top-[3%] lg:left-[5%] md:left-[5%] max-md:left-[5%]
+        className="selection:bg-green-light selection:text-black text-green-light header z-20 bg-black/4 backdrop-blur-md fixed md:w-[90vw] max-md:w-[90vw] rounded-2xl px-[40px] py-[10px] top-[3%] lg:left-[5%] md:left-[5%] max-md:left-[5%]
     flex flex-row flex-wrap justify-between items-center
     max-md:items-start"
         ref={headerRef}
       >
         <div
-          className="px-[10px] md:px-0 text-white font-semibold font-firacode
+          className="flex flex-row flex-nowrap justify-center items-center gap-[10px] px-[10px] md:px-0 text-green-light font-semibold font-firacode
       text-[25px] 
       2xl:text-[35px]
       xl:text-[33px]
       lg:text-[31px]"
         >
-          Affan
+          {/* <div className="w-[35px] h-[35px] rounded-full overflow-hidden relative bottom-[3px]">
+            <Image
+              src={"/images/avatar.jpg"}
+              alt="affan"
+              width={35}
+              height={35}
+              className="object-cover w-full h-full"
+            />
+          </div> */}
+          <span>Affan</span>
         </div>
 
         <div
-          className="flex flex-row flex-wrap justify-center items-center 
-
+          className="text-green-light flex flex-row flex-wrap justify-center items-center 
       md:gap-[43px]
       max-md:hidden font-firacode"
         >
@@ -171,12 +179,12 @@ const Header = () => {
         </div>
 
         <div
-          className="cursor-pointer text-white md:hidden block absolute left-[15px] top-[13px] p-[6px] rounded-md bg-gray-400/20"
+          className="cursor-pointer text-green-light md:hidden block absolute left-[15px] top-[13px] p-[6px] rounded-md bg-gray-400/20"
           onClick={handleSideNav}
         >
           {navStatus ? (
             <X
-              className="transition-all duration-1000 ease text-faun w-[18px] h-[18px]"
+              className="transition-all duration-1000 ease text-green-light w-[18px] h-[18px]"
               onClick={handleSideNav}
             />
           ) : (
