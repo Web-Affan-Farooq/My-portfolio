@@ -169,7 +169,7 @@ const SkillsSection = () => {
               {skillsData[skill].map((skill, idx) => (
                 <Tooltip key={idx}>
                   <TooltipTrigger>
-                    <div className="skill-card flex flex-row flex-nowrap justify-center items-center rounded-md w-[50px] h-[50px] max-md:w-[35px] max-md:h-[35px] bg-gray-900 cursor-pointer hover:rotate-10 hover:scale-[1.2] hover:shadow-lg transition-all duration-300 ease-in-out">
+                    <div className="bg-[#1762EC]/20 w-[40px] h-[40px] backdrop-blur-xl">
                       <Image
                         src={skill.logo}
                         alt={skill.name}
