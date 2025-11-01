@@ -18,44 +18,44 @@ const services = [
   {
     title: "Frontend Development",
     description:
-      "Crafting stunning, responsive, and interactive user interfaces using modern frameworks like React and Next.js.",
+      "Crafting stunning, responsive, and interactive user interfaces using React, Next.js, and modern web technologies. SEO-optimized, accessible, and performance-driven.",
     icon: <LayoutPanelLeft size={25} className="stroke-green-light" />,
   },
   {
-    title: "Fullstack Development",
+    title: "Backend Development",
     description:
-      "Building robust and scalable full-stack web applications from concept to deployment.",
+      "Building robust, scalable, and secure backend systems with Node.js, Python, and cloud services. Database design, API development, and system architecture.",
     icon: <Server size={25} className="stroke-green-light" />,
   },
   {
-    title: "AI Integration",
+    title: "Data Science & ML",
     description:
-      "Integrating cutting-edge AI functionalities into your products using APIs from OpenAI and other leading platforms.",
+      "End-to-end data pipelines, machine learning models, data analysis, and predictive analytics. From data collection to deployment and monitoring.",
     icon: <Brain size={25} className="stroke-green-light" />,
   },
   {
-    title: "Chatbot Development",
+    title: "AI & LLM Integration",
     description:
-      "Developing intelligent and conversational chatbots to automate customer support, sales, and internal processes.",
+      "Integrating GPT, Claude, and other cutting-edge AI models. Chatbots, content generation, automation, and intelligent decision systems.",
     icon: <Bot size={25} className="stroke-green-light" />,
   },
   {
-    title: "JAMstack Development",
+    title: "Full-Stack Solutions",
     description:
-      "Creating high-performance, secure, and scalable static websites leveraging the JAMstack architecture.",
+      "End-to-end web applications combining frontend excellence, backend power, and deployment expertise. MVPs to enterprise systems.",
     icon: <Globe size={25} className="stroke-green-light" />,
   },
   {
     icon: <Rocket size={25} className="stroke-green-light" />,
-    title: "Performance Optimization",
+    title: "Performance & Optimization",
     description:
-      "Speed matters. I optimize applications for lightning-fast load times and smooth performance across all devices.",
+      "Lightning-fast load times, optimized database queries, efficient algorithms, and CDN integration. Core Web Vitals excellence.",
   },
   {
     icon: <Zap size={25} className="stroke-green-light" />,
-    title: "Maintenance & Support",
+    title: "Maintenance & Scaling",
     description:
-      "Ongoing support to keep your application running smoothly. Regular updates, bug fixes, and feature enhancements.",
+      "Long-term support, continuous deployment, monitoring, scaling infrastructure, and feature enhancements as your business grows.",
   },
 ];
 

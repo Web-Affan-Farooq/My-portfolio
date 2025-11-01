@@ -1,7 +1,9 @@
 export {default as HeroSection} from "./Home/Hero/Main";
 export {default as AboutSection} from "./Home/About/About";
+export {default as ExperienceSection} from "./Home/Experience/Experience";
 export {default as SkillsSection} from "./Home/Skills/Skills";
 export {default as ServicesSection} from "./Home/Services/Services";
-export {default as ExperienceSection} from "./Home/Experience/Experience";
+export {default as TrustSection} from "./Home/Trust/Trust";
+export {default as CallToActionSection} from "./Home/CTA/CallToAction";
 export {default as ArticlesSection} from './Articles/Articles'
 export {default as ProjectCard} from "./Projects/Card";

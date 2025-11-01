@@ -1,8 +1,11 @@
 import {
   HeroSection,
   AboutSection,
+  ExperienceSection,
   SkillsSection,
   ServicesSection,
+  TrustSection,
+  CallToActionSection,
 } from "@/components/pages/";
 
 const Home = () => {
@@ -11,8 +14,11 @@ const Home = () => {
       <article className="max-sm:pt-[120px] sm:pt-[140px] flex flex-col flex-nowrap justify-center items-center gap-[100px]">
         <HeroSection />
         <AboutSection />
+        <ExperienceSection />
         <SkillsSection />
         <ServicesSection />
+        <TrustSection />
+        <CallToActionSection />
       </article>
     </main>
   );

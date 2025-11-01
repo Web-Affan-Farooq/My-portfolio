@@ -144,13 +144,7 @@ const About = () => {
     );
   }, []);
 
-  const aboutContent = ` I'm Muhammad Affan, a full-stack developer based in Pakistan with a passion
-            for building clean, scalable, and efficient software solutions. I
-            have a solid understanding of software design and architecture, and I love turning
-            complex problems into elegant code. With strong capabilities, I am
-            specializing in creating seamless user experiences and robust
-            backend logic. I'm always exploring new technologies and sharpening
-            my problem-solving abilities.`;
+  const aboutContent = `I'm Muhammad Affan, a full-stack developer and data science enthusiast based in Pakistan. I specialize in building scalable, production-ready solutions tailored to diverse business needs. Whether you're a freelance client seeking a solo contributor, a startup needing rapid MVP development, a remote team requiring collaborative engineering, or an enterprise demanding robust architecture—I deliver excellence. My expertise spans data science pipelines, cloud infrastructure, modern frontend frameworks, and backend systems design. I combine clean coding principles with pragmatic problem-solving to transform complex requirements into elegant, maintainable solutions that drive real business impact.`;
 
   return (
     <section className="2xl:w-[85vw] sm:p-[18px]">
