@@ -62,7 +62,7 @@
   --color-green-light: var(--green-color);
   --font-firacode: var(--firacode);
   --font-opensans: var(--opensans);
-  --font-poppins-small: var(--poppins);
+  --font-poppins: var(--poppins);
   --color-faun:var(--faun);
   --breakpoint-project-cards:870px;
   --color-sidebar-ring: var(--sidebar-ring);
