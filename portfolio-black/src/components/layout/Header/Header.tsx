@@ -42,6 +42,21 @@ const LinkedinProfile = () => {
     </Link>
   );
 };
+const XProfile = () => {
+  return (
+    <Link href={"www.linkedin.com/in/muhammad-affan-139a3a290"}>
+      <div className="z-10 cursor-pointer text-white p-[6px] rounded-md bg-gray-400/20">
+        <Image
+          src={"/icons/xcom.svg"}
+          alt="Muhammad affan"
+          width={15}
+          height={15}
+          className="w-[15px] h-[15px] transition-all duration-1000 ease"
+        />
+      </div>
+    </Link>
+  );
+};
 
 gsap.registerPlugin(useGSAP);
 const Header = () => {
@@ -121,7 +136,7 @@ const Header = () => {
         </div>
 
         <div
-          className="text-green-light flex flex-row flex-wrap justify-center items-center 
+          className="text-faun flex flex-row flex-wrap justify-center items-center 
       md:gap-[43px]
       max-md:hidden font-firacode"
         >
@@ -137,6 +152,7 @@ const Header = () => {
           <div className="flex flex-row flex-nowrap gap-[10px]">
             <GithubProfile />
             <LinkedinProfile />
+            <XProfile />
           </div>
         </div>
 

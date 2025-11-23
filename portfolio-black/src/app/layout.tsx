@@ -17,12 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-opensans bg-black text-light-gray`}>
-        <SlidingWindow>
-          <Toaster />
-          <Header />
-          {children}
-          <Footer />
-        </SlidingWindow>
+        <Toaster />
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

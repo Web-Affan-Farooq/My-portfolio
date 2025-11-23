@@ -11,6 +11,7 @@ import { ProjectCard } from "@/components/pages";
 /* ____ Types ... */
 import { Project } from "@/@types/Projects";
 import { useProjects } from "@/stores/projects";
+import ProjectStarter from "@/components/pages/Projects/ProjectsStarter";
 // import { testprojects } from "@/constants";
 
 export default function ProjectsSection() {
@@ -33,6 +34,9 @@ export default function ProjectsSection() {
               </div>
               <div className="w-1/2"></div>
             </div>
+            {/* <br /> */}
+            {/* <br /> */}
+            {/* <ProjectStarter /> */}
             <br />
             <br />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-[20px] max-sm:gap-[100px]">

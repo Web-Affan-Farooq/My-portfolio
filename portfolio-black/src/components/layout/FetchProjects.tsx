@@ -2,6 +2,7 @@
 import { useProjects } from "@/stores/projects";
 import React, { useEffect } from "react";
 import { ProjectsAction } from "@/actions";
+import { testprojects } from "@/constants";
 
 const FetchProjects = ({ children }: { children: React.ReactNode }) => {
   const { setProjects } = useProjects();

@@ -10,9 +10,13 @@ const Home = () => {
     <main>
       <article className="max-sm:pt-[120px] sm:pt-[140px] flex flex-col flex-nowrap justify-center items-center gap-[100px]">
         <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        <ServicesSection />
+
+        <div className="w-[80vw] border border-blue-500">
+          <AboutSection />
+          <SkillsSection />
+        </div>
+
+        {/* <ServicesSection /> */}
       </article>
     </main>
   );

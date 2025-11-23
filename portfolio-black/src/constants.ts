@@ -2,7 +2,7 @@ const testprojects = [
   {
     project_category: "Fullstack",
     project_github_link: "/",
-    project_description:
+    projects_casestudy:
       "this is project description df dfidhfi kfjdjf dfdksf dksjfk dskfjdsk jfkdsjfjfgkjf kgkfjgkjkkjdklv jdkljksf jfkdj difuid dkfjd fidufiu jdgk jfkgjiofugi udfifugiodfu gioud",
     project_images: ["/images/example-project.png"],
     project_tags: [
@@ -26,7 +26,7 @@ const testprojects = [
   {
     project_category: "Fullstack",
     project_github_link: "/",
-    project_description:
+    project_casestudy:
       "this is project description df dfidhfi kfjdjf dfdksf dksjfk dskfjdsk jfkdsjfjfgkjf kgkfjgkjkkjdklv jdkljksf jfkdj difuid dkfjd fidufiu jdgk jfkgjiofugi udfifugiodfu gioud",
     project_images: ["/images/example-project.png"],
     project_tags: [

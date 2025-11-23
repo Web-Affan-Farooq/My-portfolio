@@ -33,8 +33,8 @@ const HeroText = () => {
       {/* desktop viewView */}
       <div className="max-md:hidden">
         <div className="banner-head flex justify-evenly items-center overflow-hidden 2xl:h-[170px] xl:h-[150px]">
-          <h1 className="text-green-light font-firacode font-bold max-sm:text-[40px] sm:text-[50px] md:text-[77px] lg:text-[100px] xl:text-[120px] 2xl:text-[130px]">
-            Full-stack
+          <h1 className="text-green-light font-firacode font-bold max-sm:text-[30px] sm:text-[40px] md:text-[67px] lg:text-[90px] xl:text-[110px] 2xl:text-[120px]">
+            Muhammad
           </h1>
 
           <Link href={"/projects"} className="flex items-center gap-2">
@@ -57,8 +57,8 @@ const HeroText = () => {
             </p>
           </div>
 
-          <h1 className="text-green-light font-firacode font-bold max-sm:text-[40px] sm:text-[50px] md:text-[77px] lg:text-[100px] xl:text-[120px] 2xl:text-[130px]">
-            Developer
+          <h1 className="text-green-light font-firacode font-bold max-sm:text-[30px] sm:text-[40px] md:text-[47px] lg:text-[90px] xl:text-[110px] 2xl:text-[120px]">
+            Affan
           </h1>
         </div>
       </div>
@@ -67,12 +67,12 @@ const HeroText = () => {
       <div className="flex flex-col justify-center items-start sm:p-10 max-sm:p-0 gap-5 md:hidden">
         <div className="w-full">
           <div className="max-[400px]:h-[70px] h-[100px] overflow-hidden">
-            <h1 className="banner-mobile text-green-light font-firacode font-bold text-[70px] max-[500px]:text-[55px] max-[400px]:text-[45px]">
+            <h1 className="banner-mobile text-green-light font-firacode font-bold text-[60px] max-[500px]:text-[45px] max-[400px]:text-[35px]">
               Full-stack
             </h1>
           </div>
           <div className="max-[400px]:h-[70px] h-[100px] overflow-hidden w-full">
-            <h1 className="banner-mobile ml-16 max-[400px]:ml-0 text-green-light font-firacode font-bold text-[70px] max-[500px]:text-[55px] max-[400px]:text-[45px]">
+            <h1 className="banner-mobile ml-16 max-[400px]:ml-0 text-green-light font-firacode font-bold text-[60px] max-[500px]:text-[45px] max-[400px]:text-[35px]">
               Developer
             </h1>
           </div>
